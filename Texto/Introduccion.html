@@ -1,0 +1,1371 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Introducción a Python &mdash; Notas de Modelación y Simulación</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="top" title="Notas de Modelación y Simulación" href="../index.html" />
+    <link rel="prev" title="Notas de Modelación y Simulación" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../index.html" title="Notas de Modelación y Simulación"
+             accesskey="P">anterior</a></li>
+        <li><a href="../index.html">Notas de Modelación y Simulación - Carlos Córdoba</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Contenidos</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Introducción a Python</a><ul>
+<li><a class="reference internal" href="#por-que-python">Por qué Python?</a></li>
+<li><a class="reference internal" href="#arrancar-python-x-y-y-spyder">Arrancar Python(x,y) y Spyder</a></li>
+<li><a class="reference internal" href="#mi-primer-programa-en-python">Mi primer programa en Python</a></li>
+<li><a class="reference internal" href="#tipos-de-datos-en-python">Tipos de datos en Python</a><ul>
+<li><a class="reference internal" href="#numeros-enteros-y-flotantes">Números enteros y flotantes</a></li>
+<li><a class="reference internal" href="#listas">Listas</a></li>
+<li><a class="reference internal" href="#strings-o-cadenas">Strings o cadenas</a></li>
+<li><a class="reference internal" href="#tuplas">Tuplas</a></li>
+<li><a class="reference internal" href="#diccionarios">Diccionarios</a></li>
+<li><a class="reference internal" href="#conversion-entre-tipos-de-datos">Conversión entre tipos de datos</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#funciones">Funciones</a></li>
+<li><a class="reference internal" href="#estructuras-de-control">Estructuras de Control</a><ul>
+<li><a class="reference internal" href="#el-condicional-if">El condicional (if)</a></li>
+<li><a class="reference internal" href="#el-ciclo-for">El ciclo for</a></li>
+<li><a class="reference internal" href="#el-ciclo-while">El ciclo while</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#clases">Clases</a></li>
+<li><a class="reference internal" href="#importar-librerias">Importar librerías</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Tema anterior</h4>
+  <p class="topless"><a href="../index.html"
+                        title="Capítulo anterior">Notas de Modelación y Simulación</a></p>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="introduccion-a-python">
+<h1>Introducción a Python<a class="headerlink" href="#introduccion-a-python" title="Enlazar permanentemente con este título">¶</a></h1>
+<div class="section" id="por-que-python">
+<h2>Por qué Python?<a class="headerlink" href="#por-que-python" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Python es un lenguaje de programación orientado a objetos que fue creado por
+Guido van Rossum a principios de los años 90 y que ha tenido un gran
+crecimiento en los últimos 10 años, debido principalmente a su adopción por
+parte de Google.</p>
+<p>También está siendo adoptado por gran cantidad de científicos de distintas
+disciplinas (astrónomos, biólogos, físicos y científicos sociales) como una
+alternativa gratuita a <em>Matlab</em> basada en software libre. En gran parte esto se
+debe a que Python es muy fácil de aprender pues posee una sintaxis muy
+sencilla. Además, tiene excelente documentación de soporte, librerías
+científicas de primera calidad, capacidades de graficación en dos y tres
+dimensiones, y un enorme repertorio de librerías libres para realizar
+prácticamente cualquier tarea imaginable (creación de sitios web, interacción
+con bases de datos, creación de interfaces gráficas multi-plataforma, etc,
+etc).</p>
+<p>En este curso vamos a utilizar <a class="reference external" href="http://www.pythonxy.com/">Python(x,y)</a>, un
+programa que no sólo permite instalar fácilmente Python, sino que también viene
+con todas las librerías necesarias para llevar a cabo un buen curso de
+modelación y simulación.</p>
+</div>
+<div class="section" id="arrancar-python-x-y-y-spyder">
+<h2>Arrancar Python(x,y) y Spyder<a class="headerlink" href="#arrancar-python-x-y-y-spyder" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Después de haber instalado <em>Python(x,y)</em> podemos observar se crea un ícono en
+el escritorio para acceder a él. Al darle doble click, vemos que se abre una
+ventana, en la que oprimimos el botón que aparece justo debajo de <strong>Spyder</strong>.</p>
+<p><a class="reference external" href="http://code.google.com/p/spyderlib/">Spyder</a> es un Entorno de Desarrollo Integrado (o IDE por sus siglas en inglés)
+que ha sido creado para hacer más sencilla y agradable la programación de
+simulaciones científicas. Su diseño ha sido inspirado por <em>Matlab</em> pero se le
+han añadido características especiales para facilitar el desarrollo de
+programas en Python. Durante el curso vamos a utilizar Spyder para realizar
+nuestras simulaciones.</p>
+<p>Al abrir Spyder vemos que está compuesto de cuatro paneles. En la mitad
+izquierda se encuentra el <strong>Editor</strong>, que es el lugar en el que vamos a
+escribir nuestro código. El editor además reporta errores de sintaxis y
+omisiones comunes, para que puedan ser corregidas por el programador antes de
+intentar correr su código.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="figure align-center">
+<img alt="../_images/editor.png" src="../_images/editor.png" />
+<p class="caption">Editor con varios archivos abiertos</p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>La parte derecha está dividida en dos secciones, cada una de las cuales
+contiene varios paneles organizados en pestañas. En la parte de abajo se
+encuentra la <strong>Consola</strong> (Console), que sirve para correr el código que se haya
+escrito en el editor. Su comportamiento es similar al de la terminal de
+comandos de Windows (cmd.exe). Además, permite interactuar con las variables del
+programa y correr directamente código de Python o porciones de código que se
+encuentren en el Editor.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="figure align-center">
+<img alt="../_images/consola.png" src="../_images/consola.png" />
+<p class="caption">Consola</p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>A su lado se encuentra el <strong>Historial de Comandos</strong> (History Log), que guarda
+la historia de todos los comandos introducidos en la Consola.</p>
+<p>Por otro lado, en la parte superior está el <strong>Inspector de Objetos</strong> (Object
+Inspector) que se usa para obtener ayuda instantánea sobre la función o el
+comando de Python que se quiera utilizar. Este panel se actualiza
+automáticamente al escribir un paréntesis después del nombre de un comando, por
+lo que es bastante útil.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="figure align-center">
+<img alt="../_images/object_inspector.png" src="../_images/object_inspector.png" />
+<p class="caption">Inspector de Objetos</p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>A su lado se encuentra el <strong>Explorador de Variables</strong> (Variable Explorer) que
+permita revisar, editar y graficar las variables de los programas que se hayan
+corrido en la consola.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="figure align-center">
+<img alt="../_images/variable_explorer.png" src="../_images/variable_explorer.png" />
+<p class="caption">Explorador de Variables</p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+<div class="section" id="mi-primer-programa-en-python">
+<h2>Mi primer programa en Python<a class="headerlink" href="#mi-primer-programa-en-python" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>El primer programa que todos realizamos es el &#8220;Hola Mundo&#8221;. En Python este
+programa es extremadamente sencillo, pues sólo consiste en una línea:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">print</span> <span class="s">&quot;Hola, mundo!&quot;</span>
+</pre></div>
+</div>
+<p>Para correr este programa, lo copiamos en el Editor, guardamos el archivo con
+el nombre que queramos y después oprimimos selecciones <strong>Run</strong> del menú <em>Run</em> o
+simplemente oprimimos <strong>F5</strong>.</p>
+<p>La ventaja de <tt class="docutils literal"><span class="pre">print</span></tt> es que puede imprimir distintos tipos de datos, tan
+sólo con separarlos con una coma. Por ejemplo, también es válido escribir:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">print</span> <span class="s">&quot;El resultado de K es&quot;</span><span class="p">,</span> <span class="mi">7</span><span class="o">+</span><span class="mi">8</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tipos-de-datos-en-python">
+<h2>Tipos de datos en Python<a class="headerlink" href="#tipos-de-datos-en-python" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Como la mayoría de lenguajes de programación, Python maneja varios tipos de
+datos. Los más importantes son:</p>
+<div class="section" id="numeros-enteros-y-flotantes">
+<h3>Números enteros y flotantes<a class="headerlink" href="#numeros-enteros-y-flotantes" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Con los números uno puede realizar los siguientes tipos de operaciones:</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="39%" />
+<col width="61%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Operación</th>
+<th class="head">Resultado</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>+</td>
+<td>Suma</td>
+</tr>
+<tr><td>-</td>
+<td>Resta</td>
+</tr>
+<tr><td>*</td>
+<td>Multiplicación</td>
+</tr>
+<tr><td>/</td>
+<td>División</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<div class="admonition warning">
+<p class="first admonition-title">Advertencia</p>
+<p>Al dividir dos números enteros, Python realiza por defecto la división
+entera de ellos, tal como lo hacen C o C++. Es decir que el resultado de,
+por ejemplo:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="mi">1</span><span class="o">/</span><span class="mi">2</span>
+</pre></div>
+</div>
+<p>no es, como uno esperaría, 0.5, sino <strong>0</strong>.</p>
+<p>Para evitar esto, lo que usualmente se hace es convertir los números a
+flotantes añadiéndoles un punto al final, de la siguiente forma:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="mf">1.</span><span class="o">/</span><span class="mf">2.</span>
+</pre></div>
+</div>
+<p>Python brinda una alternativa más sencilla para poder olvidarse de si los
+números con los que estamos trabajando son enteros o flotantes. Para ello
+debe introducirse la siguiente instrucción en la <strong>primera línea</strong> del
+archivo en el que estemos programando:</p>
+<div class="last highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
+</pre></div>
+</div>
+</div>
+<dl class="docutils">
+<dt><strong>Ejercicios</strong></dt>
+<dd><p class="first">Realizar las siguientes operaciones</p>
+<ul class="last">
+<li><p class="first">Calcular</p>
+<div class="math">
+<p><img src="../_images/math/e4f7befe8a226608cfdfdbb7f68e85ba1100f82c.png" alt="\frac{1}{20.7^2} + 3" /></p>
+</div></li>
+<li><p class="first">Calcular</p>
+<div class="math">
+<p><img src="../_images/math/2a0f0c3297c96b67bdd427f194a26d720c5cc980.png" alt="3.5 \times \left( 2.7 + 2^4 \right)" /></p>
+</div></li>
+<li><p class="first">Cuántos milímetros hay en la distancia de la Tierra a la Luna, que es de
+380.000 kilómetros?</p>
+</li>
+<li><p class="first">Cuántos segundos hay en un siglo?</p>
+</li>
+<li><p class="first">Cuál es el número más grande que puede calcularse con tres dígitos, los
+paréntesis y los operadores +, -, *, / y **? (Tomado de <em>Introducción a
+Mathematica</em> del Prof. Jurgen Tischer)</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Para interrumpir un cálculo en la consola debe oprimirse el botón
+<img alt="kill_img" src="../_images/kill.png" /> <strong>Kill</strong>. Después de hacerlo debe oprimirse el botón
+<img alt="run_img" src="../_images/run_small.png" /> <strong>Run</strong> para reiniciarla.</p>
+</div>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="listas">
+<h3>Listas<a class="headerlink" href="#listas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Las listas son arreglos de datos. Se definen con corchetes, y pueden contener
+datos de distintos tipos (números enteros y flotantes o también los tipos que
+veremos más abajo). Un ejemplo de una lista en Python es:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [1]: </span><span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>La operación más importante que se hace con las listas es la extracción de sus
+elementos en distintas posiciones. Es muy importante tener en cuenta que las
+listas en Python siempre empiezan con el índice 0, como los arreglos de C y
+C++.</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [2]: </span><span class="n">li</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gr">Out[2]: </span><span class="o">-</span><span class="mi">5</span>
+
+<span class="gp">In [3]: </span><span class="n">li</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="gr">Out[3]: </span><span class="mi">9</span>
+</pre></div>
+</div>
+<p>Lo bueno de las listas en Python es que si usamos un índice más grande que
+<em>n-1</em>, donde <em>n</em> es el número de elementos, Python nos da un error (en lugar de
+darnos basura de la memoria)</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [4]: </span><span class="n">li</span><span class="p">[</span><span class="mi">20</span><span class="p">]</span>
+<span class="go">---------------------------------------------------------------------------</span>
+<span class="go">IndexError                                Traceback (most recent call last)</span>
+<span class="go">/home/carlos/Trabajo/Ecci/Modelacion y Simulacion/Notas/&lt;ipython-input-4-0a252909fc48&gt; in &lt;module&gt;()</span>
+<span class="go">----&gt; 1 li[20]</span>
+
+<span class="go">IndexError: list index out of range</span>
+</pre></div>
+</div>
+<p>Las listas son objetos mutables, es decir, sus elementos pueden modificarse de
+acuerdo a la siguiente sintaxis:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [5]: </span><span class="n">li</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="gp">In [6]: </span><span class="n">li</span>
+<span class="gr">Out[6]: </span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>El manejo de listas en Python es muy elegante gracias a varias facilidades. En
+primer lugar pueden usarse índices negativos para extraer elementos del final
+de la lista hacia adelante, de esta forma:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [7]: </span><span class="n">li</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="gr">Out[7]: </span><span class="mi">2</span>
+
+<span class="gp">In [8]: </span><span class="n">li</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+<span class="gr">Out[8]: </span><span class="mi">1</span>
+</pre></div>
+</div>
+<p>Además pueden seleccionarse fácilmente subconjuntos de una lista usando lo que
+se conoce como <em>rebanado</em> (o <em>slicing</em> en inglés), que consiste en usar dos
+índices separados por <tt class="docutils literal"><span class="pre">:</span></tt> al momento de tomar elementos de la lista. Al
+hacerlo, Python toma los elementos que van desde el primer índice hasta uno
+menos del último. Miremos un par de ejemplos:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [9]: </span><span class="n">li</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="gr">Out[9]: </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="gp">In [10]: </span><span class="n">li</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span>
+<span class="gr">Out[10]: </span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>El rebanado también funciona si se usa un sólo índice, bien sea el superior o
+el inferior, siempre que vaya acompañado de los <tt class="docutils literal"><span class="pre">:</span></tt>. En estos casos se
+obtiene el resultado que uno esperaría, es decir, que se tome desde el índice
+que uno quiera hasta el final:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [11]: </span><span class="n">li</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
+<span class="gr">Out[11]: </span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>o que se pare en un índice menos que el que se use como último:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [12]: </span><span class="n">li</span><span class="p">[:</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+<span class="gr">Out[12]: </span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Finalmente, pueden usarse las operaciones aritméticas + para concatenar dos
+listas, y * para repetir varias veces los elementos de una lista, así:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [13]: </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="gr">Out[13]: </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="gp">In [14]: </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mi">4</span>
+<span class="gr">Out[14]: </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt><strong>Ejercicios</strong>:</dt>
+<dd><ul class="first">
+<li><p class="first">Calcular el promedio de la siguiente lista:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span>\
+<span class="mi">19</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span>\
+<span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">62</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">15</span><span class="p">]</span>
+</pre></div>
+</div>
+<p><em>Sugerencia</em>: Usar el comando <tt class="docutils literal"><span class="pre">sum</span></tt> para obtener la suma de los elementos
+de la lista, y el comando <tt class="docutils literal"><span class="pre">len</span></tt> para obtener cuantos elementos tiene.</p>
+</li>
+<li><p id="mediana">Calcular la mediana de la lista anterior. Recordar que para calcular la
+mediana hay que organizar los datos de menor a mayor y después utilizar la
+fórmula:</p>
+<div class="math">
+<p><img src="../_images/math/1a2dc358c5c836a0568cae41bf6290b10fd4f4cf.png" alt="\tilde{x}=
+\begin{cases}
+x_{\frac{n+1}{2}}\quad, &amp; \textrm{si n es impar}\\
+\frac{1}{2}\left(x_{\frac{n}{2}}+x_{\frac{n}{2}+1}\right)\quad, &amp; \textrm{si
+n es par}
+\end{cases}" /></p>
+</div><p>donde <em>n</em> es el número de elementos de la lista.</p>
+<p><em>Sugerencia</em>: Usar el comando <tt class="docutils literal"><span class="pre">sorted</span></tt> para organizar los elementos de la
+lista de menor a mayor.</p>
+</li>
+<li><p class="first">La media móvil es un concepto usado en economía para tratar de observar si
+existe una tendencia al alza o a la baja en los precios de las acciones de
+una empresa. Para ello, lo que hace es crear una serie de promedios de
+distintos subconjuntos del conjunto de datos original.</p>
+<p>Por ejemplo, si en siete días las acciones de una empresa tuvieron los
+siguientes precios:</p>
+<blockquote>
+<div><p><em>Precios</em>: 11, 12, 13, 14, 15, 16, 17</p>
+</div></blockquote>
+<p>Podemos calcular la media móvil, en periodos de cinco días, de la siguiente
+forma:</p>
+<blockquote>
+<div><p><em>Primera media móvil de 5 días</em>: (11 + 12 + 13 + 14 + 15) / 5 = 13</p>
+<p><em>Segunda media móvil de 5 días</em>: (12 + 13 + 14 + 15 + 16) / 5 = 14</p>
+<p><em>Tercera media móvil de 5 días</em>: (13 + 14 + 15 + 16 + 17) / 5 = 15</p>
+</div></blockquote>
+<p>Con esta descripción, encontrar las primeras 12 medias móviles, en periodos
+de 10 días, para los siguientes precios de las acciones de Intel
+registrados entre el 24 de Marzo y el 5 de Mayo de 2010:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">Intel</span> <span class="o">=</span> <span class="p">[</span><span class="mf">22.27</span><span class="p">,</span> <span class="mf">22.19</span><span class="p">,</span> <span class="mf">22.08</span><span class="p">,</span> <span class="mf">22.17</span><span class="p">,</span> <span class="mf">22.18</span><span class="p">,</span> <span class="mf">22.13</span><span class="p">,</span> <span class="mf">22.23</span><span class="p">,</span> <span class="mf">22.43</span><span class="p">,</span> <span class="mf">22.24</span><span class="p">,</span>\
+<span class="mf">22.29</span><span class="p">,</span> <span class="mf">22.15</span><span class="p">,</span> <span class="mf">22.39</span><span class="p">,</span> <span class="mf">22.38</span><span class="p">,</span> <span class="mf">22.61</span><span class="p">,</span> <span class="mf">23.36</span><span class="p">,</span> <span class="mf">24.05</span><span class="p">,</span> <span class="mf">23.75</span><span class="p">,</span> <span class="mf">23.83</span><span class="p">,</span> <span class="mf">23.95</span><span class="p">,</span>\
+<span class="mf">23.63</span><span class="p">,</span> <span class="mf">23.82</span><span class="p">,</span> <span class="mf">23.87</span><span class="p">,</span> <span class="mf">23.65</span><span class="p">,</span> <span class="mf">23.19</span><span class="p">,</span> <span class="mf">23.10</span><span class="p">,</span> <span class="mf">23.33</span><span class="p">,</span> <span class="mf">22.68</span><span class="p">,</span> <span class="mf">23.10</span><span class="p">,</span> <span class="mf">22.40</span><span class="p">,</span>\
+<span class="mf">22.17</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<blockquote class="last">
+<div><p>Las acciones de Intel están a la alza o a la baja en este periodo?</p>
+<p><em>Sugerencia</em> Utilizar las operaciones de rebanado descritas arriba.</p>
+</div></blockquote>
+</dd>
+</dl>
+</div>
+<div class="section" id="strings-o-cadenas">
+<h3>Strings o cadenas<a class="headerlink" href="#strings-o-cadenas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>En Python las cadenas son definidas como listas de caracteres, por lo que es
+posible aplicarles rebanado y las demás operaciones que vimos en la sección
+anterior. Una cadena se puede formar usando comillas dobles o sencillas, de la
+siguiente manera:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [15]: </span><span class="n">fruta</span> <span class="o">=</span> <span class="s">&quot;banano&quot;</span>
+
+<span class="gp">In [16]: </span><span class="n">dulce</span> <span class="o">=</span> <span class="s">&#39;bocadillo&#39;</span>
+</pre></div>
+</div>
+<p>En este caso, los operadores + y * dan los siguientes resultados:</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="12%" />
+<col width="21%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Operación</th>
+<th class="head">Uso</th>
+<th class="head">Resultado</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>+</td>
+<td>cadena + cadena</td>
+<td>Une dos cadenas</td>
+</tr>
+<tr><td>*</td>
+<td>cadena * número</td>
+<td>Repite una cadena tantas veces como sea el número</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>Con las dos variables arriba definidas podemos realizar, por ejemplo, las
+siguientes operaciones:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [17]: </span><span class="n">fruta</span> <span class="o">+</span> <span class="n">dulce</span>
+<span class="gr">Out[17]: </span><span class="s">&#39;bananobocadillo&#39;</span>
+
+<span class="gp">In [18]: </span><span class="n">fruta</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="gr">Out[18]: </span><span class="s">&#39;bananobananobanano&#39;</span>
+
+<span class="gp">In [19]: </span><span class="n">dulce</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gr">Out[19]: </span><span class="s">&#39;b&#39;</span>
+
+<span class="gp">In [20]: </span><span class="n">dulce</span><span class="p">[:</span><span class="mi">7</span><span class="p">]</span>
+<span class="gr">Out[20]: </span><span class="s">&#39;bocadil&#39;</span>
+</pre></div>
+</div>
+<p>Sin embargo, las cadenas no pueden ser modificadas, es decir, no les puede
+asignar nuevos elementos como a las listas y por tanto son inmutables. Esto lo
+podemos constatar a continuación:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [21]: </span><span class="n">fruta</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;z&#39;</span>
+<span class="go">---------------------------------------------------------------------------</span>
+<span class="go">TypeError                                 Traceback (most recent call last)</span>
+<span class="go">/home/carlos/Trabajo/Ecci/Modelacion y Simulacion/Notas/&lt;ipython-input-21-e128f67047a6&gt; in &lt;module&gt;()</span>
+<span class="go">----&gt; 1 fruta[2] = &#39;z&#39;</span>
+
+<span class="go">TypeError: &#39;str&#39; object does not support item assignment</span>
+</pre></div>
+</div>
+<p>Las cadenas tienen varios métodos que pueden ser de gran utilidad. A ellos se
+puede acceder colocando un punto después del nombre de la variable a la que se
+le haya asignado una cadena. Por ejemplo, si después de <tt class="docutils literal"><span class="pre">fruta</span></tt> colocamos un
+punto, veremos que aparece:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [22]: </span><span class="n">fruta</span><span class="o">.</span>
+<span class="go">fruta.__add__                      fruta.__mod__                      fruta.decode                       fruta.partition</span>
+<span class="go">fruta.__class__                    fruta.__mul__                      fruta.encode                       fruta.replace</span>
+<span class="go">fruta.__contains__                 fruta.__ne__                       fruta.endswith                     fruta.rfind</span>
+<span class="go">fruta.__delattr__                  fruta.__new__                      fruta.expandtabs                   fruta.rindex</span>
+<span class="go">fruta.__doc__                      fruta.__reduce__                   fruta.find                         fruta.rjust</span>
+<span class="go">fruta.__eq__                       fruta.__reduce_ex__                fruta.format                       fruta.rpartition</span>
+<span class="go">fruta.__format__                   fruta.__repr__                     fruta.index                        fruta.rsplit</span>
+<span class="go">fruta.__ge__                       fruta.__rmod__                     fruta.isalnum                      fruta.rstrip</span>
+<span class="go">fruta.__getattribute__             fruta.__rmul__                     fruta.isalpha                      fruta.split</span>
+<span class="go">fruta.__getitem__                  fruta.__setattr__                  fruta.isdigit                      fruta.splitlines</span>
+<span class="go">fruta.__getnewargs__               fruta.__sizeof__                   fruta.islower                      fruta.startswith</span>
+<span class="go">fruta.__getslice__                 fruta.__str__                      fruta.isspace                      fruta.strip</span>
+<span class="go">fruta.__gt__                       fruta.__subclasshook__             fruta.istitle                      fruta.swapcase</span>
+<span class="go">fruta.__hash__                     fruta._formatter_field_name_split  fruta.isupper                      fruta.title</span>
+<span class="go">fruta.__init__                     fruta._formatter_parser            fruta.join                         fruta.translate</span>
+<span class="go">fruta.__le__                       fruta.capitalize                   fruta.ljust                        fruta.upper</span>
+<span class="go">fruta.__len__                      fruta.center                       fruta.lower                        fruta.zfill</span>
+<span class="go">fruta.__lt__                       fruta.count                        fruta.lstrip</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Advertencia</p>
+<p class="last">Los métodos que empiezan con dos guiones abajo (<tt class="docutils literal"><span class="pre">__</span></tt>) son métodos internos
+de la clase, es decir que no han sido diseñados para ser usados directamente
+por el programador, y por tanto no hay que tenerlos en cuenta.</p>
+</div>
+<p>Entre estos métodos, vamos a mirar que comportamiento tienen los siguientes:</p>
+<ul>
+<li><p class="first"><strong>upper</strong>: Convierte toda la cadena en mayúsculas</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [23]: </span><span class="n">fruta</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="gr">Out[23]: </span><span class="s">&#39;BANANO&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>count</strong>: Cuenta cuantas veces se repite un carácter en una cadena</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [24]: </span><span class="n">fruta</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">)</span>
+<span class="gr">Out[24]: </span><span class="mi">2</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>replace</strong>: Reemplaza un carácter o parte de una cadena por otro carácter o
+cadena</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [25]: </span><span class="n">fruta</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;o&#39;</span><span class="p">)</span>
+<span class="gr">Out[25]: </span><span class="s">&#39;bonono&#39;</span>
+
+<span class="gp">In [26]: </span><span class="n">fruta</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39;ban&#39;</span><span class="p">,</span> <span class="s">&#39;en&#39;</span><span class="p">)</span>
+<span class="gr">Out[26]: </span><span class="s">&#39;enano&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>split</strong>: Divide una cadena según los espacios que tenga y genera una lista
+de palabras.</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [27]: </span><span class="n">s</span> <span class="o">=</span> <span class="s">&quot;Hola, mundo!&quot;</span>
+
+<span class="gp">In [28]: </span><span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="gr">Out[28]: </span><span class="p">[</span><span class="s">&#39;Hola,&#39;</span><span class="p">,</span> <span class="s">&#39;mundo!&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>También puede dividir una cadena por un determinado carácter para partirla en
+varias subcadenas:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [29]: </span><span class="n">dulce</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;d&#39;</span><span class="p">)</span>
+<span class="gr">Out[29]: </span><span class="p">[</span><span class="s">&#39;boca&#39;</span><span class="p">,</span> <span class="s">&#39;illo&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<dl class="docutils">
+<dt><strong>Ejercicios</strong></dt>
+<dd><ul class="first last">
+<li><p class="first">Tomar la variable <tt class="docutils literal"><span class="pre">dulce</span></tt>, hacer que se repita 50 veces, y separar las
+palabras con un espacio, de tal forma que obtengamos algo como:</p>
+<p><tt class="docutils literal"><span class="pre">'bocadillo</span> <span class="pre">bocadillo</span> <span class="pre">...'</span></tt></p>
+</li>
+<li><p class="first">Cuántas veces se repite la palabra <tt class="docutils literal"><span class="pre">banano</span></tt> en la siguiente cadena?:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">muchas_frutas</span> <span class="o">=</span> <span class="s">&#39;bananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobananobananobananobananobananobananobananobananobananobananobanano</span><span class="se">\</span>
+<span class="s">bananobanano&#39;</span>
+</pre></div>
+</div>
+<p><em>Sugerencia</em>: Usar el comando <tt class="docutils literal"><span class="pre">len</span></tt> para contar los elementos de una
+lista.</p>
+</li>
+<li><p class="first">Para la cadena anterior, separar cada palabra con dos espacios y un guión
+en la mitad y reemplazar la <em>b</em> por una <em>B</em> y la <em>o</em> por una <em>O</em>, de tal
+forma que obtengamos algo como:</p>
+<p><tt class="docutils literal"><span class="pre">'BananO</span> <span class="pre">-</span> <span class="pre">BananO</span> <span class="pre">-</span> <span class="pre">...'</span></tt></p>
+</li>
+<li><p class="first">Qué produce el método <tt class="docutils literal"><span class="pre">center</span></tt>?</p>
+<p>Experimentar con los siguientes comandos para ver que produce:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [30]: </span><span class="n">dulce</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="gp">In [31]: </span><span class="n">dulce</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="gp">In [32]: </span><span class="n">dulce</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
+
+<span class="gp">In [33]: </span><span class="n">dulce</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="tuplas">
+<h3>Tuplas<a class="headerlink" href="#tuplas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Una tupla es un arreglo <strong>inmutable</strong> de distintos tipos de datos. Es decir, es
+como si fuera una lista y tiene sus mismas propiedades, pero al igual que las
+cadenas, no es posible modificar ninguno de sus valores.</p>
+<p>Las tuplas se definen con paréntesis <tt class="docutils literal"><span class="pre">(</span> <span class="pre">)</span></tt> en lugar de corchetes. Un ejemplo
+de tupla sería:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [34]: </span><span class="n">tp</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="s">&#39;a&#39;</span><span class="p">)</span>
+
+<span class="gp">In [35]: </span><span class="n">tp</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="gr">Out[35]: </span><span class="mi">4</span>
+
+<span class="gp">In [36]: </span><span class="n">tp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="gr">Out[36]: </span><span class="s">&#39;a&#39;</span>
+
+<span class="gp">In [37]: </span><span class="n">tp</span><span class="p">[</span><span class="mi">2</span><span class="p">:]</span>
+<span class="gr">Out[37]: </span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s">&#39;a&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Pero no podemos modificar sus valores mediante nuevas asignaciones:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [38]: </span><span class="n">tp</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;b&#39;</span>
+<span class="go">---------------------------------------------------------------------------</span>
+<span class="go">TypeError                                 Traceback (most recent call last)</span>
+<span class="go">/home/carlos/Trabajo/Ecci/Modelacion y Simulacion/Notas/&lt;ipython-input-38-3688dc6b8d2c&gt; in &lt;module&gt;()</span>
+<span class="go">----&gt; 1 tp[2] = &#39;b&#39;</span>
+
+<span class="go">TypeError: &#39;tuple&#39; object does not support item assignment</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p>Es posible omitir los paréntesis al momento de definir una tupla si así se
+desea, lo cual es una práctica bastante extendida entre los programadores de
+Python. Por ejemplo, una asignación válida es:</p>
+<div class="last highlight-ipython"><div class="highlight"><pre><span class="gp">In [39]: </span><span class="n">tp1</span> <span class="o">=</span> <span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">,</span> <span class="mi">2</span>
+
+<span class="gp">In [40]: </span><span class="n">tp1</span>
+<span class="gr">Out[40]: </span><span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="diccionarios">
+<h3>Diccionarios<a class="headerlink" href="#diccionarios" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Los diccionarios son una estructura de datos muy usada en Python. Ya hemos
+visto que los elementos de listas, cadenas y tuplas están indexados por
+números, es decir, li[0], fruta[1] o tp[2]. En su lugar, los diccionarios están
+indexados por <em>claves</em> (o keys en inglés), que pueden ser no sólo números, sino
+también cadenas, tuplas o cualquier otro tipo de datos que sea
+<strong>inmutable</strong>.</p>
+<p>Lo interesante de los diccionarios es que nos sirven para relacionar dos tipos
+distintos de datos: las claves con sus <em>valores</em> (o values en inglés), que
+pueden ser mutables o inmutables.</p>
+<p>Por ejemplo, supongamos que queremos guardar las contraseñas que varias
+personas están utilizando para entrar a un servicio web. Esto lo podemos hacer
+muy fácilmente con un diccionario, en el que las claves sean el nombre de cada
+persona y sus valores sean las contraseñas que estén usando.</p>
+<p>Para ello, en Python podemos escribir algo como:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [41]: </span><span class="n">codigos</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;Luis&#39;</span><span class="p">:</span> <span class="mi">2257</span><span class="p">,</span> <span class="s">&#39;Juan&#39;</span><span class="p">:</span> <span class="mi">9739</span><span class="p">,</span> <span class="s">&#39;Carlos&#39;</span><span class="p">:</span> <span class="mi">5591</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Como podemos ver, los diccionarios se definen con llaves (<tt class="docutils literal"><span class="pre">{</span> <span class="pre">}</span></tt>). Las claves
+son los elementos que están a la izquierda de los <tt class="docutils literal"><span class="pre">:</span></tt>, mientras que los que
+están a la derecha son los <em>valores</em>.</p>
+<p>Como ya se mencionó, para extraer un elemento del diccionario es necesario usar
+alguna de sus claves. En nuestro caso, las claves son los nombres de las
+personas. Por ejemplo, para extraer el código que le corresponde a <tt class="docutils literal"><span class="pre">Carlos</span></tt>
+debemos escribir:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [42]: </span><span class="n">codigos</span><span class="p">[</span><span class="s">&#39;Carlos&#39;</span><span class="p">]</span>
+<span class="gr">Out[42]: </span><span class="mi">5591</span>
+</pre></div>
+</div>
+<p>o para el de <tt class="docutils literal"><span class="pre">Juan</span></tt></p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [43]: </span><span class="n">codigos</span><span class="p">[</span><span class="s">&#39;Juan&#39;</span><span class="p">]</span>
+<span class="gr">Out[43]: </span><span class="mi">9739</span>
+</pre></div>
+</div>
+<p>Si alguien cambia de contraseña, podemos actualizar nuestro diccionario
+fácilmente haciendo una nueva asignación, por ejemplo:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [44]: </span><span class="n">codigos</span><span class="p">[</span><span class="s">&#39;Luis&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1627</span>
+
+<span class="gp">In [45]: </span><span class="n">codigos</span>
+<span class="gr">Out[45]: </span><span class="p">{</span><span class="s">&#39;Carlos&#39;</span><span class="p">:</span> <span class="mi">5591</span><span class="p">,</span> <span class="s">&#39;Juan&#39;</span><span class="p">:</span> <span class="mi">9739</span><span class="p">,</span> <span class="s">&#39;Luis&#39;</span><span class="p">:</span> <span class="mi">1627</span><span class="p">}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Los diccionarios no tienen un orden interno por defecto. En el último
+ejemplo podemos ver como <tt class="docutils literal"><span class="pre">'Luis'</span></tt> aparece al final del diccionario,
+mientras que en la primera definición de <tt class="docutils literal"><span class="pre">códigos</span></tt> aparecía al
+principio. No hay que preocuparse por ello.</p>
+</div>
+<p>O si una persona se retira del servicio, podemos eliminarla del diccionario
+usando el comando <tt class="docutils literal"><span class="pre">del</span></tt>, así</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [46]: </span><span class="k">del</span> <span class="n">codigos</span><span class="p">[</span><span class="s">&#39;Juan&#39;</span><span class="p">]</span>
+
+<span class="gp">In [47]: </span><span class="n">codigos</span>
+<span class="gr">Out[47]: </span><span class="p">{</span><span class="s">&#39;Carlos&#39;</span><span class="p">:</span> <span class="mi">5591</span><span class="p">,</span> <span class="s">&#39;Luis&#39;</span><span class="p">:</span> <span class="mi">1627</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Si queremos introducir el nombre y la contraseña de una nueva persona, sólo es
+necesario usar una nueva clave y asignarle un valor, así</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [48]: </span><span class="n">codigos</span><span class="p">[</span><span class="s">&#39;Jorge&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">6621</span>
+
+<span class="gp">In [49]: </span><span class="n">codigos</span>
+<span class="gr">Out[49]: </span><span class="p">{</span><span class="s">&#39;Carlos&#39;</span><span class="p">:</span> <span class="mi">5591</span><span class="p">,</span> <span class="s">&#39;Jorge&#39;</span><span class="p">:</span> <span class="mi">6621</span><span class="p">,</span> <span class="s">&#39;Luis&#39;</span><span class="p">:</span> <span class="mi">1627</span><span class="p">}</span>
+</pre></div>
+</div>
+<p>Para saber si una persona ya está en el diccionario o no, usamos el siguiente
+método:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [50]: </span><span class="n">codigos</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="s">&#39;Carlos&#39;</span><span class="p">)</span>
+<span class="gr">Out[50]: </span><span class="bp">True</span>
+
+<span class="gp">In [51]: </span><span class="n">codigos</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="s">&#39;José&#39;</span><span class="p">)</span>
+<span class="gr">Out[51]: </span><span class="bp">False</span>
+</pre></div>
+</div>
+<p>Finalmente, para extraer todas las claves y los valores de un diccionario
+podemos usar los siguientes métodos:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [52]: </span><span class="n">codigos</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="gr">Out[52]: </span><span class="p">[</span><span class="s">&#39;Luis&#39;</span><span class="p">,</span> <span class="s">&#39;Jorge&#39;</span><span class="p">,</span> <span class="s">&#39;Carlos&#39;</span><span class="p">]</span>
+
+<span class="gp">In [53]: </span><span class="n">codigos</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+<span class="gr">Out[53]: </span><span class="p">[</span><span class="mi">1627</span><span class="p">,</span> <span class="mi">6621</span><span class="p">,</span> <span class="mi">5591</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="conversion-entre-tipos-de-datos">
+<h3>Conversión entre tipos de datos<a class="headerlink" href="#conversion-entre-tipos-de-datos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Para convertir entre unos y otros tipos de datos, en Python se usan los
+siguientes comandos:</p>
+<ol class="arabic">
+<li><p class="first"><tt class="docutils literal"><span class="pre">int</span></tt>: Da la parte entera de un número flotante, y también covierte cadenas
+que sean enteros.</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [54]: </span><span class="nb">int</span><span class="p">(</span><span class="mf">3.99</span><span class="p">)</span>
+<span class="gr">Out[54]: </span><span class="mi">3</span>
+
+<span class="gp">In [55]: </span><span class="nb">int</span><span class="p">(</span><span class="s">&#39;6&#39;</span><span class="p">)</span>
+<span class="gr">Out[55]: </span><span class="mi">6</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">float</span></tt>: convierte enteros y cadenas a números flotantes.</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [56]: </span><span class="nb">float</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+<span class="gr">Out[56]: </span><span class="mf">12.0</span>
+
+<span class="gp">In [57]: </span><span class="nb">float</span><span class="p">(</span><span class="s">&#39;4.23&#39;</span><span class="p">)</span>
+<span class="gr">Out[57]: </span><span class="mf">4.23</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">list</span></tt>: Convierte tuplas, diccionarios y cadenas a una lista.</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [58]: </span><span class="nb">list</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="gr">Out[58]: </span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="gp">In [59]: </span><span class="nb">list</span><span class="p">(</span><span class="s">&#39;1457&#39;</span><span class="p">)</span>
+<span class="gr">Out[59]: </span><span class="p">[</span><span class="s">&#39;1&#39;</span><span class="p">,</span> <span class="s">&#39;4&#39;</span><span class="p">,</span> <span class="s">&#39;5&#39;</span><span class="p">,</span> <span class="s">&#39;7&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Para los diccionarios, <tt class="docutils literal"><span class="pre">list</span></tt> sólo extrae las claves y no los valores</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [60]: </span><span class="nb">list</span><span class="p">({</span><span class="s">&#39;a&#39;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">})</span>
+<span class="gr">Out[60]: </span><span class="p">[</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">dict</span></tt>: Convierte una lista de listas, donde cada una tiene dos elementos,
+a un diccionario.</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [61]: </span><span class="nb">dict</span><span class="p">([[</span><span class="mi">10</span><span class="p">,</span> <span class="s">&#39;a&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">15</span><span class="p">,</span> <span class="s">&#39;t&#39;</span><span class="p">]])</span>
+<span class="gr">Out[61]: </span><span class="p">{</span><span class="mi">10</span><span class="p">:</span> <span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span> <span class="s">&#39;t&#39;</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="funciones">
+<h2>Funciones<a class="headerlink" href="#funciones" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Como en cualquier otro lenguaje, en Python también es posible definir
+funciones, es decir, secuencias de enunciados que reciben ciertos datos,
+ejecutan algunas operaciones sobre ellos y devuelven un resultado.</p>
+<p>Para definir una función se usa la palabra clave <tt class="docutils literal"><span class="pre">def</span></tt>, y el valor que va a
+retornar siempre debe ser precedido por un <tt class="docutils literal"><span class="pre">return</span></tt>. La sintaxis de una
+función es como se ve a continuación:</p>
+<div class="highlight-python"><pre>def NOMBRE(LISTA DE ARGUMENTOS):
+    ENUNCIADOS
+    return VALOR</pre>
+</div>
+<p>La línea que contiene el <tt class="docutils literal"><span class="pre">return</span></tt> es opcional, pues no todas las funciones
+deben retornar algo. Por ejemplo, hay algunas que sólo modifican los valores de
+ciertas variables, mientras que otras sólo imprimen un valor con <tt class="docutils literal"><span class="pre">print</span></tt></p>
+<div class="admonition warning">
+<p class="first admonition-title">Advertencia</p>
+<p class="last">Es muy importante tener en cuenta que los enunciados que hacen parte de la
+función deben estar <strong>cuatro espacios</strong> por dentro del encabezado. En otras
+palabras, todo lo que esté indentado con cuatro espacios por dentro de la
+definición, pertenece al cuerpo de la función, ya que en Python la
+indentación es lo único que define la forma en que se agrupa el código. Sólo
+cuando el nivel de indentación se retorne al punto en que se escribió el
+primer <tt class="docutils literal"><span class="pre">def</span></tt> se considera que ha terminado la definición de la función.</p>
+</div>
+<p>Un ejemplo muy sencillo de una función que toma un argumento <tt class="docutils literal"><span class="pre">x</span></tt> y retorna
+este argumento elevado al cuadrado es:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">cuadrado</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+</div>
+<p>Podemos comprobar que la función esta operando correctamente al pasarle varios
+argumentos y ver los resultados que retorna:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [62]: </span><span class="n">cuadrado</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gr">Out[62]: </span><span class="mi">9</span>
+
+<span class="gp">In [63]: </span><span class="n">cuadrado</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="gr">Out[63]: </span><span class="mi">25</span>
+
+<span class="gp">In [64]: </span><span class="n">cuadrado</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="gr">Out[64]: </span><span class="mi">100</span>
+
+<span class="gp">In [65]: </span><span class="n">cuadrado</span><span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">)</span>
+<span class="go">---------------------------------------------------------------------------</span>
+<span class="go">TypeError                                 Traceback (most recent call last)</span>
+<span class="go">/home/carlos/Trabajo/Ecci/Modelacion y Simulacion/Notas/&lt;ipython-input-65-d15440223ddf&gt; in &lt;module&gt;()</span>
+<span class="go">----&gt; 1 cuadrado(&#39;a&#39;)</span>
+
+<span class="go">/home/carlos/Trabajo/Ecci/Modelacion y Simulacion/Notas/&lt;ipython-input-62-ca512653e72d&gt; in cuadrado(x)</span>
+<span class="go">      1 def cuadrado(x):</span>
+<span class="go">----&gt; 2      return x**2</span>
+
+<span class="go">TypeError: unsupported operand type(s) for ** or pow(): &#39;str&#39; and &#39;int&#39;</span>
+</pre></div>
+</div>
+<p>En el último caso vemos que si intentamos pasarle a la función un argumento que
+no puede ser procesado, Python simplemente retorna un error.</p>
+<dl class="docutils">
+<dt><strong>Ejercicios</strong></dt>
+<dd><ul class="first last">
+<li><p class="first">Definir una función <tt class="docutils literal"><span class="pre">potencia</span></tt> que tome dos argumentos <tt class="docutils literal"><span class="pre">x,y</span></tt> y
+devuelva</p>
+<div class="math">
+<p><img src="../_images/math/a10b287efc99c61de338740e9b5d78f85bb87120.png" alt="x^y" /></p>
+</div></li>
+<li><p class="first">Definir una función <tt class="docutils literal"><span class="pre">imprimir_doble</span></tt> que tome un argumento <tt class="docutils literal"><span class="pre">x</span></tt> y lo
+imprima dos veces, con un espacio entre el una palabra y la siguiente. Por
+ejemplo, al evaluarla debe retornar:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [66]: </span><span class="n">imprimir_doble</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="go">5 5</span>
+
+<span class="gp">In [67]: </span><span class="n">imprimir_doble</span><span class="p">(</span><span class="s">&#39;hola&#39;</span><span class="p">)</span>
+<span class="go">hola hola</span>
+
+<span class="gp">In [68]: </span><span class="n">imprimir_doble</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+<span class="go">[3, 9, 4] [3, 9, 4]</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Definir una función <tt class="docutils literal"><span class="pre">distancia</span></tt> que tome dos argumentos <tt class="docutils literal"><span class="pre">x,y</span></tt>, que sean
+listas de dos elementos, y calcule la distancia entre ellos usando el
+teorema de Pitágoras:</p>
+<div class="math">
+<p><img src="../_images/math/25cc58bea4e831eb804d3b7753f1912f3092f54c.png" alt="\sqrt{\left(x_{1}-y_{1}\right)^{2}+\left(x_{2}-y_{2}\right)^{2}}" /></p>
+</div><p>Pueden comprobar que la función está haciendo su trabajo correctamente si
+retorna estos valores:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [69]: </span><span class="n">distancia</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+<span class="gr">Out[69]: </span><span class="mf">1.4142135623730951</span>
+
+<span class="gp">In [70]: </span><span class="n">distancia</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="gr">Out[70]: </span><span class="mf">3.1622776601683795</span>
+</pre></div>
+</div>
+</li>
+<li><p id="digitos">Definir una función <tt class="docutils literal"><span class="pre">digitos</span></tt> que tome un numero <tt class="docutils literal"><span class="pre">x</span></tt> y retorne los
+dígitos de que se compone como números enteros. Por ejemplo, digitos debe
+retornar:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [71]: </span><span class="n">digitos</span><span class="p">(</span><span class="mi">1234</span><span class="p">)</span>
+<span class="gr">Out[71]: </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="gp">In [72]: </span><span class="n">digitos</span><span class="p">(</span><span class="mi">99861</span><span class="p">)</span>
+<span class="gr">Out[72]: </span><span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+<p><em>Sugerencia</em>: Utilizar los comandos de conversión entre tipos y el comando
+<tt class="docutils literal"><span class="pre">map</span></tt> para aplicar una función a todos los elementos de una lista. Por
+ejemplo, podemos usar <tt class="docutils literal"><span class="pre">map</span></tt> con <tt class="docutils literal"><span class="pre">cuadrado</span></tt> de la siguiente forma:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [73]: </span><span class="nb">map</span><span class="p">(</span><span class="n">cuadrado</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<span class="gr">Out[73]: </span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="estructuras-de-control">
+<h2>Estructuras de Control<a class="headerlink" href="#estructuras-de-control" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>A continuación vamos a describir las estructuras de control más importantes en
+Python:</p>
+<div class="section" id="el-condicional-if">
+<h3>El condicional (if)<a class="headerlink" href="#el-condicional-if" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Es quizá la estructura de control más utilizada. A continuación presentamos un
+sencillo ejemplo para observar como es su sintaxis en Python:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">mayor_o_menor</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span><span class="p">:</span>
+        <span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="s">&quot;es menor que&quot;</span><span class="p">,</span> <span class="n">y</span>
+    <span class="k">elif</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span><span class="p">:</span>
+        <span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="s">&quot;es mayor que&quot;</span><span class="p">,</span> <span class="n">y</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span> <span class="n">x</span><span class="p">,</span> <span class="s">&quot;y&quot;</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">&quot;son iguales&quot;</span>
+</pre></div>
+</div>
+<p>Al aplicar esta función a distintos números obtenemos:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [74]: </span><span class="n">mayor_o_menor</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="go">2 es menor que 5</span>
+
+<span class="gp">In [75]: </span><span class="n">mayor_o_menor</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="go">100 es mayor que 10</span>
+
+<span class="gp">In [76]: </span><span class="n">mayor_o_menor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">1 y 1 son iguales</span>
+</pre></div>
+</div>
+<p>Algunos de los operadores con los que se pueden hacer comparaciones al momento
+de usar en <tt class="docutils literal"><span class="pre">if</span></tt> son:</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="13%" />
+<col width="87%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Operador</th>
+<th class="head">Resultado</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>==</td>
+<td>Igualdad</td>
+</tr>
+<tr><td>!=</td>
+<td>No es igual</td>
+</tr>
+<tr><td>&lt;</td>
+<td>Menor que</td>
+</tr>
+<tr><td>&gt;</td>
+<td>Mayor que</td>
+</tr>
+<tr><td>&lt;=</td>
+<td>Menor o igual</td>
+</tr>
+<tr><td>&gt;=</td>
+<td>Mayor o igual</td>
+</tr>
+<tr><td>not</td>
+<td>Niega una condición</td>
+</tr>
+<tr><td>in</td>
+<td>Se usa para verificar si un elemento está en una lista</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>A excepción de <tt class="docutils literal"><span class="pre">in</span></tt> y <tt class="docutils literal"><span class="pre">not</span></tt>, todos los demás operadores son similares a los
+usados en otros lenguajes de programación, por lo que no vamos a mirar ejemplos
+de ellos. Veamos, por tanto, sólo como funcionan los primeros:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [77]: </span><span class="mi">3</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="gr">Out[77]: </span><span class="bp">False</span>
+
+<span class="gp">In [78]: </span><span class="mi">3</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="gr">Out[78]: </span><span class="bp">True</span>
+
+<span class="gp">In [79]: </span><span class="ow">not</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">5</span>
+<span class="gr">Out[79]: </span><span class="bp">True</span>
+</pre></div>
+</div>
+<p>A través de estos ejemplos también podemos notar que los valores de verdad en
+Python se escriben como <tt class="xref docutils literal"><span class="pre">True</span></tt> y <tt class="xref docutils literal"><span class="pre">False</span></tt> para verdadero y falso,
+respectivamente.</p>
+<dl class="docutils">
+<dt><strong>Ejercicios</strong></dt>
+<dd><ul class="first last">
+<li><p class="first">Definir una función <tt class="docutils literal"><span class="pre">absoluto(x)</span></tt> que tome un número entero y retorne su
+valor absoluto, así:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [80]: </span><span class="n">absoluto</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="gr">Out[80]: </span><span class="mi">6</span>
+
+<span class="gp">In [81]: </span><span class="n">absoluto</span><span class="p">(</span><span class="mf">100.22</span><span class="p">)</span>
+<span class="gr">Out[81]: </span><span class="mf">100.22</span>
+
+<span class="gp">In [82]: </span><span class="n">absoluto</span><span class="p">(</span><span class="o">-</span><span class="mf">18.7</span><span class="p">)</span>
+<span class="gr">Out[82]: </span><span class="mf">18.7</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Definir una función <tt class="docutils literal"><span class="pre">es_divisible_entre_siete(x)</span></tt> que imprima si un
+número es o no es divisible entre 7. La función debe retornar resultados
+como los siguientes:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [83]: </span><span class="n">es_divisible_entre_siete</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+<span class="go">12 no es divisible entre 7</span>
+
+<span class="gp">In [84]: </span><span class="n">es_divisible_entre_siete</span><span class="p">(</span><span class="mi">14</span><span class="p">)</span>
+<span class="go">14 es divisible entre 7</span>
+
+<span class="gp">In [85]: </span><span class="n">es_divisible_entre_siete</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span>
+<span class="go">32 no es divisible entre 7</span>
+
+<span class="gp">In [86]: </span><span class="n">es_divisible_entre_siete</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span>
+<span class="go">21 es divisible entre 7</span>
+</pre></div>
+</div>
+<p><em>Sugerencia</em>: Utilizar el operador módulo (<tt class="docutils literal"><span class="pre">%</span></tt>) para decidir si un número
+es múltiplo de otro. Este operador retorna el resto de la división entre
+dos números. Por tanto, si un número divide exactamente a otro, retorna
+<tt class="docutils literal"><span class="pre">0</span></tt>, sino retorna cualquier otro número. Veamos algunos ejemplos:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [87]: </span><span class="mi">12</span><span class="o">%</span><span class="mi">4</span>
+<span class="gr">Out[87]: </span><span class="mi">0</span>
+
+<span class="gp">In [88]: </span><span class="mi">12</span><span class="o">%</span><span class="mi">6</span>
+<span class="gr">Out[88]: </span><span class="mi">0</span>
+
+<span class="gp">In [89]: </span><span class="mi">12</span><span class="o">%</span><span class="mi">5</span>
+<span class="gr">Out[89]: </span><span class="mi">2</span>
+
+<span class="gp">In [90]: </span><span class="mi">25</span><span class="o">%</span><span class="mi">5</span>
+<span class="gr">Out[90]: </span><span class="mi">0</span>
+
+<span class="gp">In [91]: </span><span class="mi">25</span><span class="o">%</span><span class="mi">6</span>
+<span class="gr">Out[91]: </span><span class="mi">1</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Generalizar la función anterior en una función llamada
+<tt class="docutils literal"><span class="pre">es_divisible_entre_n(x,</span> <span class="pre">n)</span></tt> que tome dos números enteros e imprima si el
+primero es divisible entre el segundo, así: (Tomado de <em>Aprenda a pensar
+como un programador con Python</em>)</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [92]: </span><span class="n">es_divisible_entre_n</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="go">20 es divisible entre 4</span>
+
+<span class="gp">In [93]: </span><span class="n">es_divisible_entre_n</span><span class="p">(</span><span class="mi">36</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="go">36 no es divisible entre 5</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Definir una función <tt class="docutils literal"><span class="pre">agregar_nuevo(li,</span> <span class="pre">x)</span></tt> que reciba una lista y un
+elemento y retorne una nueva lista en la que esté añadido el elemento, pero
+sólo si éste <strong>no</strong> hace parte de la lista original (Tomado de
+<em>Introducción a Mathematica</em> del Prof. Jurgen Tischer).</p>
+<p>Por ejemplo:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [94]: </span><span class="n">agregar_nuevo</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="mi">11</span><span class="p">)</span>
+<span class="gr">Out[94]: </span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+
+<span class="gp">In [95]: </span><span class="n">agregar_nuevo</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="mi">9</span><span class="p">)</span>
+<span class="gr">Out[95]: </span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="el-ciclo-for">
+<h3>El ciclo for<a class="headerlink" href="#el-ciclo-for" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>En Python <tt class="docutils literal"><span class="pre">for</span></tt> se utiliza para moverse o iterar entre un conjunto de
+valores. Su sintaxis es más sencilla que la usada en C o C++, porque en lugar
+de utilizar un contador cuyo valor va aumentando o disminuyendo durante el
+ciclo, se toma una secuencia completa (una lista, una tupla, o una cadena), y
+se recorren sus elementos en el orden en que aparecen en ella.</p>
+<p>Observemos algunos ejemplos:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [96]: </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">]:</span>
+<span class="gp">   ....:</span>      <span class="k">print</span> <span class="n">x</span>
+<span class="gp">   ....:</span> 
+<span class="go">3</span>
+<span class="go">9</span>
+<span class="go">12</span>
+<span class="go">4</span>
+
+<span class="gp">In [97]: </span><span class="n">prefijos</span> <span class="o">=</span> <span class="s">&quot;JKLMNOPQ&quot;</span>
+
+<span class="gp">In [98]: </span><span class="n">sufijos</span> <span class="o">=</span> <span class="s">&quot;ack&quot;</span>
+
+<span class="gp">In [99]: </span><span class="k">for</span> <span class="n">letra</span> <span class="ow">in</span> <span class="n">prefijos</span><span class="p">:</span>
+<span class="gp">   ....:</span>      <span class="k">print</span> <span class="n">letra</span> <span class="o">+</span> <span class="n">sufijos</span>
+<span class="gp">   ....:</span> 
+<span class="go">Jack</span>
+<span class="go">Kack</span>
+<span class="go">Lack</span>
+<span class="go">Mack</span>
+<span class="go">Nack</span>
+<span class="go">Oack</span>
+<span class="go">Pack</span>
+<span class="go">Qack</span>
+
+<span class="gp">In [100]: </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+<span class="gp">   .....:</span>      <span class="k">print</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span>
+<span class="gp">   .....:</span> 
+<span class="go">0</span>
+<span class="go">1</span>
+<span class="go">4</span>
+<span class="go">9</span>
+<span class="go">16</span>
+<span class="go">25</span>
+<span class="go">36</span>
+<span class="go">49</span>
+<span class="go">64</span>
+<span class="go">81</span>
+</pre></div>
+</div>
+<p><tt class="docutils literal"><span class="pre">range</span></tt> es un comando que muy a menudo se utiliza junto a los ciclos <tt class="docutils literal"><span class="pre">for</span></tt>,
+pues sirve para generar una lista con todos los números desde 0 hasta <em>n</em>-1,
+donde <em>n</em> es el valor que recibe. También puede usarse con dos valores, uno
+como límite inferior y el otro como límite superior, así:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [101]: </span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="gr">Out[101]: </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">19</span><span class="p">]</span>
+
+<span class="gp">In [102]: </span><span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+<span class="gr">Out[102]: </span><span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">24</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt><strong>Ejercicios</strong>:</dt>
+<dd><ul class="first last">
+<li><p class="first">Construir un ciclo <tt class="docutils literal"><span class="pre">for</span></tt> que imprima todos los números pares de 1 a 100.</p>
+<p><em>Sugerencia</em>: Utilizar el operador módulo (<tt class="docutils literal"><span class="pre">%</span></tt>) y un <tt class="docutils literal"><span class="pre">if</span></tt>.</p>
+</li>
+<li><p class="first">Definir una función <tt class="docutils literal"><span class="pre">es_primo(x)</span></tt> que tome un número <tt class="docutils literal"><span class="pre">x</span></tt> y verifique si
+es divisible entre todos los números menores a <tt class="docutils literal"><span class="pre">x</span></tt>. Si lo es, entonces debe
+retornar <tt class="xref docutils literal"><span class="pre">False</span></tt> y si no <tt class="xref docutils literal"><span class="pre">True</span></tt>. Por ejemplo:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [103]: </span><span class="n">es_primo</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="gr">Out[103]: </span><span class="bp">False</span>
+
+<span class="gp">In [104]: </span><span class="n">es_primo</span><span class="p">(</span><span class="mi">17</span><span class="p">)</span>
+<span class="gr">Out[104]: </span><span class="bp">True</span>
+
+<span class="gp">In [105]: </span><span class="n">es_primo</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+<span class="gr">Out[105]: </span><span class="bp">False</span>
+
+<span class="gp">In [106]: </span><span class="n">es_primo</span><span class="p">(</span><span class="mi">23</span><span class="p">)</span>
+<span class="gr">Out[106]: </span><span class="bp">True</span>
+</pre></div>
+</div>
+<p><em>Sugerencia</em>: Modificar la función <tt class="docutils literal"><span class="pre">es_divisible_entre_n</span></tt> para que
+en lugar de imprimir oraciones, retorne <tt class="xref docutils literal"><span class="pre">True</span></tt> o <tt class="xref docutils literal"><span class="pre">False</span></tt>.</p>
+</li>
+<li><p class="first">Optimizar la función anterior, respondiendo a la siguiente pregunta: ¿Es
+necesario revisar todos los números menores a <tt class="docutils literal"><span class="pre">x</span></tt> para verificar si es
+divisible entre todos ellos? ¿Hasta qué número es en realidad necesario
+revisar?</p>
+<p>Para ello, definir una nueva función <tt class="docutils literal"><span class="pre">es_primo_veloz(x)</span></tt> y comparar los
+tiempos de ejecución entre ella y <tt class="docutils literal"><span class="pre">es_primo</span></tt> usando el comando
+<tt class="docutils literal"><span class="pre">%timeit</span></tt> en la consola, así:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [107]: </span><span class="o">%</span><span class="n">timeit</span> <span class="n">es_primo</span><span class="p">(</span><span class="mi">600</span><span class="p">)</span>
+<span class="go">100000 loops, best of 3: 5.68 us per loop</span>
+
+<span class="gp">In [108]: </span><span class="o">%</span><span class="n">timeit</span> <span class="n">es_primo_veloz</span><span class="p">(</span><span class="mi">600</span><span class="p">)</span>
+<span class="go">100000 loops, best of 3: 2.74 us per loop</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Definir una función <tt class="docutils literal"><span class="pre">rango_intercuartil(li)</span></tt> que calcule el rango
+intercuartil de una lista. Recordar que éste se define como:</p>
+<div class="math">
+<p><img src="../_images/math/e4f629882ea1ab80245eef05dc7579a7b002345a.png" alt="RI = Q_{3} - Q_{1}" /></p>
+</div><p>donde <img class="math" src="../_images/math/4d10fa4b5534c69b3b35c9f3ce31686d2d514260.png" alt="Q_{3}"/> es la mediana de los datos mayores a la mediana y
+<img class="math" src="../_images/math/9ff97a2bba217fae35b1416a20689953687d22a8.png" alt="Q_{1}"/> es la mediana de los datos menores a la mediana.</p>
+<p>Por ejemplo, para la siguiente lista:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="mf">48.38</span><span class="p">,</span>  <span class="mf">27.6</span> <span class="p">,</span>  <span class="mf">32.46</span><span class="p">,</span>  <span class="mf">51.94</span><span class="p">,</span>  <span class="mf">47.43</span><span class="p">,</span>  <span class="mf">48.61</span><span class="p">,</span>  <span class="mf">34.38</span><span class="p">,</span>  <span class="mf">48.98</span><span class="p">,</span>\
+      <span class="mf">48.86</span><span class="p">,</span>  <span class="mf">41.45</span><span class="p">,</span>  <span class="mf">56.55</span><span class="p">,</span>  <span class="mf">25.46</span><span class="p">,</span>  <span class="mf">27.03</span><span class="p">,</span>  <span class="mf">36.72</span><span class="p">,</span>  <span class="mf">48.03</span><span class="p">,</span>  <span class="mf">36.86</span><span class="p">,</span>\
+      <span class="mf">42.58</span><span class="p">,</span>  <span class="mf">44.44</span><span class="p">,</span>  <span class="mf">56.12</span><span class="p">,</span>  <span class="mf">43.86</span><span class="p">,</span>  <span class="mf">44.42</span><span class="p">,</span>  <span class="mf">42.92</span><span class="p">,</span>  <span class="mf">41.43</span><span class="p">,</span>  <span class="mf">22.81</span><span class="p">,</span>\
+      <span class="mf">36.55</span><span class="p">,</span>  <span class="mf">50.89</span><span class="p">,</span>  <span class="mf">29.93</span><span class="p">,</span>  <span class="mf">47.61</span><span class="p">,</span>  <span class="mf">63.91</span><span class="p">,</span>  <span class="mf">53.98</span><span class="p">,</span>  <span class="mf">42.64</span><span class="p">,</span>  <span class="mf">27.18</span><span class="p">,</span>\
+      <span class="mf">29.93</span><span class="p">,</span>  <span class="mf">31.51</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>el rango intercuartil es:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [109]: </span><span class="n">rango_intercuartil</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
+<span class="gr">Out[109]: </span><span class="mf">16.15</span>
+</pre></div>
+</div>
+<p><em>Sugerencias</em>:</p>
+<ul>
+<li><p class="first">Definir primero una función <tt class="docutils literal"><span class="pre">mediana(li)</span></tt> que calcule la mediana de una
+lista, de la misma forma en que se hizo en el <a class="reference internal" href="#mediana">ejercicio</a> de la sección
+de <a class="reference internal" href="#listas">Listas</a>. La mediana de la lista anterior, por ejemplo, es:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [110]: </span><span class="n">mediana</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
+<span class="gr">Out[110]: </span><span class="mf">42.78</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Dividir la lista original en dos listas <tt class="docutils literal"><span class="pre">li1</span></tt> y <tt class="docutils literal"><span class="pre">li2</span></tt> que contengan
+los elementos menores y mayores a la mediana, respectivamente, y
+calcularles a éstas nuevamente la mediana para obtener <img class="math" src="../_images/math/4d10fa4b5534c69b3b35c9f3ce31686d2d514260.png" alt="Q_{3}"/> y
+<img class="math" src="../_images/math/9ff97a2bba217fae35b1416a20689953687d22a8.png" alt="Q_{1}"/>.</p>
+<p>Para ello, definir <tt class="docutils literal"><span class="pre">li1</span> <span class="pre">=</span> <span class="pre">[]</span></tt> y <tt class="docutils literal"><span class="pre">li2</span> <span class="pre">=</span> <span class="pre">[]</span></tt> para que empiecen siendo
+listas vacías y utilizar el método <tt class="docutils literal"><span class="pre">append</span></tt> de cada una para añadirles
+los elementos correspondientes.</p>
+</li>
+</ul>
+</li>
+<li><p class="first">Definir una función <tt class="docutils literal"><span class="pre">desv_est(li)</span></tt> que calcule la desviación estándar de
+una lista, usando la fórmula:</p>
+<div class="math">
+<p><img src="../_images/math/a2754021d6a10f29b16e5d8eb6fb8247a2bf05f6.png" alt="s=\sqrt{\frac{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^{2}}{n-1}}" /></p>
+</div><p>donde <img class="math" src="../_images/math/f06e84fe84a6c63a9c2c392af11652f6e0d72cf4.png" alt="\bar{x}"/> es el promedio y <img class="math" src="../_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n"/> es el número total de
+datos.</p>
+<p>Por ejemplo, la desviación estándar de la lista del ejemplo anterior es:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [111]: </span><span class="n">desv_est</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
+<span class="gr">Out[111]: </span><span class="mf">10.193054313544058</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="el-ciclo-while">
+<h3>El ciclo while<a class="headerlink" href="#el-ciclo-while" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Finalmente vamos a mirar la sintaxis del comando <tt class="docutils literal"><span class="pre">while</span></tt>, que si bien no es
+tan usado como los dos anteriores, es muy útil porque permite recorrer los
+elementos de una lista, tupla o cadena por medio de su índice. Esto es algo que
+no puede hacerse con mucha naturalidad con <tt class="docutils literal"><span class="pre">for</span></tt>, que está ideado
+para recorrer los elementos directamente, sin tener que preocuparse por sus
+posiciones.</p>
+<p>Además, con <tt class="docutils literal"><span class="pre">while</span></tt> no es necesario definir un límite superior para realizar
+un ciclo, como si hay que hacerlo con <tt class="docutils literal"><span class="pre">for</span></tt>.</p>
+<p>Miremos un par de ejemplos:</p>
+<ol class="arabic">
+<li><p class="first">En este primer ejemplo, imprimimos la lista de todos los elementos de
+<tt class="docutils literal"><span class="pre">li</span></tt>, pero seleccionándolos de <tt class="docutils literal"><span class="pre">li</span></tt> por medio de su índice.</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [112]: </span><span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+
+<span class="gp">In [113]: </span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="gp">In [114]: </span><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+<span class="gp">   .....:</span>      <span class="k">print</span> <span class="n">li</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+<span class="gp">   .....:</span>      <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="gp">   .....:</span> 
+<span class="go">3</span>
+<span class="go">6</span>
+<span class="go">9</span>
+<span class="go">11</span>
+</pre></div>
+</div>
+<p>En la última línea pueden verse un ejemplo de asignación abreviada, pues en
+lugar de escribir <tt class="docutils literal"><span class="pre">i</span> <span class="pre">=</span> <span class="pre">i+1</span></tt>, escribimos <tt class="docutils literal"><span class="pre">i</span> <span class="pre">+=</span> <span class="pre">1</span></tt>, lo cual es similar a
+como se hace en C o C++. Otras abreviaciones que funcionan en Python son:
+<tt class="docutils literal"><span class="pre">-=</span></tt>, <tt class="docutils literal"><span class="pre">*=</span></tt>, <tt class="docutils literal"><span class="pre">/=</span></tt>, y <tt class="docutils literal"><span class="pre">%=</span></tt>.</p>
+</li>
+<li><p class="first">En este ejemplo vamos a imprimir los 20 primeros números que son divisibles
+entre 4:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [115]: </span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="gp">In [116]: </span><span class="n">j</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="gp">In [117]: </span><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">20</span><span class="p">:</span>
+<span class="gp">   .....:</span>      <span class="k">if</span> <span class="n">es_divisible_entre_n</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
+<span class="gp">   .....:</span>          <span class="k">print</span> <span class="n">j</span>
+<span class="gp">   .....:</span>          <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="gp">   .....:</span>      <span class="n">j</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="gp">   .....:</span> 
+<span class="go">4</span>
+<span class="go">8</span>
+<span class="go">12</span>
+<span class="go">16</span>
+<span class="go">20</span>
+<span class="go">24</span>
+<span class="go">28</span>
+<span class="go">32</span>
+<span class="go">36</span>
+<span class="go">40</span>
+<span class="go">44</span>
+<span class="go">48</span>
+<span class="go">52</span>
+<span class="go">56</span>
+<span class="go">60</span>
+<span class="go">64</span>
+<span class="go">68</span>
+<span class="go">72</span>
+<span class="go">76</span>
+<span class="go">80</span>
+<span class="go">84</span>
+</pre></div>
+</div>
+<p>En este caso vemos cómo usar dos contadores en el ciclo, uno (<tt class="docutils literal"><span class="pre">i</span></tt>) para
+poder detenerlo cuando se haya obtenido el veinteavo número divisible entre
+4, y otro (<tt class="docutils literal"><span class="pre">j</span></tt>) para movernos entre los números mayores a <tt class="docutils literal"><span class="pre">1</span></tt> y revisar
+cuáles de ellos son divisibles entre 4.</p>
+</li>
+</ol>
+<dl class="docutils">
+<dt><strong>Ejercicios</strong>:</dt>
+<dd><ul class="first last">
+<li><p class="first">Definir una función <tt class="docutils literal"><span class="pre">cuenta_atras(n)</span></tt> que tome un número entero <tt class="docutils literal"><span class="pre">n</span></tt> e
+imprima todos los números desde <tt class="docutils literal"><span class="pre">n</span></tt> hasta <tt class="docutils literal"><span class="pre">1</span></tt> usando un ciclo
+<tt class="docutils literal"><span class="pre">while</span></tt>. Además, después de imprimir <tt class="docutils literal"><span class="pre">1</span></tt>, debe imprimir <tt class="docutils literal"><span class="pre">Este</span> <span class="pre">es</span> <span class="pre">el</span>
+<span class="pre">fin!</span></tt>.</p>
+</li>
+<li><p class="first">Dada la siguiente cadena:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">s</span> <span class="o">=</span> <span class="s">&quot;jhkdaskduwqludhlasdklashdihlasdhljakhuekysbvjkasdhlasdkhlashkdedlahskdlkbasmndkm&quot;</span>
+</pre></div>
+</div>
+<p>Imprimir en qué posiciones se encuentra la letra <tt class="docutils literal"><span class="pre">k</span></tt>.</p>
+<p><em>R/</em>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">68</span><span class="p">,</span> <span class="mi">71</span><span class="p">,</span> <span class="mi">78</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Utilizar la función <tt class="docutils literal"><span class="pre">es_primo_veloz</span></tt> para definir una función
+<tt class="docutils literal"><span class="pre">lista_de_primos(n)</span></tt> que genere la lista de los <tt class="docutils literal"><span class="pre">n</span></tt> primeros números
+primos. Para que puedan comparar, a continuación aparece la lista de los 20
+primeros números primos:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [118]: </span><span class="n">lista_de_primos</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="gr">Out[118]: </span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">53</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">61</span><span class="p">,</span> <span class="mi">67</span><span class="p">,</span> <span class="mi">71</span><span class="p">]</span>
+</pre></div>
+</div>
+<p><em>Sugerencia</em>: Definir una lista vacía y utilizar su método append para
+añadirle los números primos que vayamos encontrando.</p>
+</li>
+<li><p class="first">Usar la función <a class="reference internal" href="#digitos">digitos</a>, para encontrar el primer número de 4 cifras que
+sea divisible entre 8 y cuya primera y última cifras sean iguales.</p>
+<p><em>R/</em>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="mi">2032</span>
+</pre></div>
+</div>
+<p><em>Sugerencia</em>: Definir dos contadores: uno que empiece en <tt class="docutils literal"><span class="pre">1000</span></tt> para ir
+revisando todos los números de 4 cifras, y otro para detener el ciclo
+<tt class="docutils literal"><span class="pre">while</span></tt> tan pronto se encuentre el primer número que cumpla la condición
+deseada.</p>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<div class="section" id="clases">
+<h2>Clases<a class="headerlink" href="#clases" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+<div class="section" id="importar-librerias">
+<h2>Importar librerías<a class="headerlink" href="#importar-librerias" title="Enlazar permanentemente con este título">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../index.html" title="Notas de Modelación y Simulación"
+             >anterior</a></li>
+        <li><a href="../index.html">Notas de Modelación y Simulación - Carlos Córdoba</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Carlos Cordoba.
+      Creado con <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>
