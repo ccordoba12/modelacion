@@ -60,7 +60,11 @@
 <li><a class="reference internal" href="#el-ciclo-while">El ciclo while</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#clases">Clases</a></li>
+<li><a class="reference internal" href="#clases">Clases</a><ul>
+<li><a class="reference internal" href="#definicion-e-inicializacion">Definición e inicialización</a></li>
+<li><a class="reference internal" href="#metodos">Métodos</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#importar-librerias">Importar librerías</a></li>
 </ul>
 </li>
@@ -120,7 +124,7 @@ intentar correr su código.</p>
 <div class="line"><br /></div>
 </div>
 <div class="figure align-center">
-<img alt="../_images/editor.png" src="../_images/editor.png" />
+<img alt="../_images/editor64.png" src="../_images/editor64.png" />
 <p class="caption">Editor con varios archivos abiertos</p>
 </div>
 <div class="line-block">
@@ -137,7 +141,7 @@ encuentren en el Editor.</p>
 <div class="line"><br /></div>
 </div>
 <div class="figure align-center">
-<img alt="../_images/consola.png" src="../_images/consola.png" />
+<img alt="../_images/consola64.png" src="../_images/consola64.png" />
 <p class="caption">Consola</p>
 </div>
 <div class="line-block">
@@ -154,7 +158,7 @@ lo que es bastante útil.</p>
 <div class="line"><br /></div>
 </div>
 <div class="figure align-center">
-<img alt="../_images/object_inspector.png" src="../_images/object_inspector.png" />
+<img alt="../_images/object_inspector64.png" src="../_images/object_inspector64.png" />
 <p class="caption">Inspector de Objetos</p>
 </div>
 <div class="line-block">
@@ -167,7 +171,7 @@ corrido en la consola.</p>
 <div class="line"><br /></div>
 </div>
 <div class="figure align-center">
-<img alt="../_images/variable_explorer.png" src="../_images/variable_explorer.png" />
+<img alt="../_images/variable_explorer64.png" src="../_images/variable_explorer64.png" />
 <p class="caption">Explorador de Variables</p>
 </div>
 <div class="line-block">
@@ -269,8 +273,8 @@ Mathematica</em> del Prof. Jurgen Tischer)</p>
 <div class="admonition note">
 <p class="first admonition-title">Nota</p>
 <p class="last">Para interrumpir un cálculo en la consola debe oprimirse el botón
-<img alt="kill_img" src="../_images/kill.png" /> <strong>Kill</strong>. Después de hacerlo debe oprimirse el botón
-<img alt="run_img" src="../_images/run_small.png" /> <strong>Run</strong> para reiniciarla.</p>
+<img alt="kill_img" src="../_images/kill64.png" /> <strong>Kill</strong>. Después de hacerlo debe oprimirse el botón
+<img alt="run_img" src="../_images/run_small64.png" /> <strong>Run</strong> para reiniciarla.</p>
 </div>
 </li>
 </ul>
@@ -302,7 +306,7 @@ darnos basura de la memoria)</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [4]: </span><span class="n">li</span><span class="p">[</span><span class="mi">20</span><span class="p">]</span>
 <span class="go">---------------------------------------------------------------------------</span>
 <span class="go">IndexError                                Traceback (most recent call last)</span>
-<span class="go">/home/carlos/Trabajo/Ecci/Modelacion y Simulacion/Notas/&lt;ipython-input-4-0a252909fc48&gt; in &lt;module&gt;()</span>
+<span class="go">/home/carlos/Trabajo/Ecci/Modelacion y Simulacion/Notas de Clase/Notas/&lt;ipython-input-4-0a252909fc48&gt; in &lt;module&gt;()</span>
 <span class="go">----&gt; 1 li[20]</span>
 
 <span class="go">IndexError: list index out of range</span>
@@ -478,7 +482,7 @@ podemos constatar a continuación:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [21]: </span><span class="n">fruta</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;z&#39;</span>
 <span class="go">---------------------------------------------------------------------------</span>
 <span class="go">TypeError                                 Traceback (most recent call last)</span>
-<span class="go">/home/carlos/Trabajo/Ecci/Modelacion y Simulacion/Notas/&lt;ipython-input-21-e128f67047a6&gt; in &lt;module&gt;()</span>
+<span class="go">/home/carlos/Trabajo/Ecci/Modelacion y Simulacion/Notas de Clase/Notas/&lt;ipython-input-21-e128f67047a6&gt; in &lt;module&gt;()</span>
 <span class="go">----&gt; 1 fruta[2] = &#39;z&#39;</span>
 
 <span class="go">TypeError: &#39;str&#39; object does not support item assignment</span>
@@ -633,7 +637,7 @@ de tupla sería:</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [38]: </span><span class="n">tp</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s">&#39;b&#39;</span>
 <span class="go">---------------------------------------------------------------------------</span>
 <span class="go">TypeError                                 Traceback (most recent call last)</span>
-<span class="go">/home/carlos/Trabajo/Ecci/Modelacion y Simulacion/Notas/&lt;ipython-input-38-3688dc6b8d2c&gt; in &lt;module&gt;()</span>
+<span class="go">/home/carlos/Trabajo/Ecci/Modelacion y Simulacion/Notas de Clase/Notas/&lt;ipython-input-38-3688dc6b8d2c&gt; in &lt;module&gt;()</span>
 <span class="go">----&gt; 1 tp[2] = &#39;b&#39;</span>
 
 <span class="go">TypeError: &#39;tuple&#39; object does not support item assignment</span>
@@ -752,7 +756,7 @@ que sean enteros.</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first"><tt class="docutils literal"><span class="pre">float</span></tt>: convierte enteros y cadenas a números flotantes.</p>
+<li><p class="first"><tt class="docutils literal"><span class="pre">float</span></tt>: Convierte enteros y cadenas a números flotantes.</p>
 <div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [56]: </span><span class="nb">float</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
 <span class="gr">Out[56]: </span><span class="mf">12.0</span>
 
@@ -761,24 +765,33 @@ que sean enteros.</p>
 </pre></div>
 </div>
 </li>
-<li><p class="first"><tt class="docutils literal"><span class="pre">list</span></tt>: Convierte tuplas, diccionarios y cadenas a una lista.</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [58]: </span><span class="nb">list</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
-<span class="gr">Out[58]: </span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<li><p class="first"><tt class="docutils literal"><span class="pre">str</span></tt>: Convierte números y cualquier otro objeto a una cadena.</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [58]: </span><span class="nb">str</span><span class="p">(</span><span class="mf">36.1</span><span class="p">)</span>
+<span class="gr">Out[58]: </span><span class="s">&#39;36.1&#39;</span>
 
-<span class="gp">In [59]: </span><span class="nb">list</span><span class="p">(</span><span class="s">&#39;1457&#39;</span><span class="p">)</span>
-<span class="gr">Out[59]: </span><span class="p">[</span><span class="s">&#39;1&#39;</span><span class="p">,</span> <span class="s">&#39;4&#39;</span><span class="p">,</span> <span class="s">&#39;5&#39;</span><span class="p">,</span> <span class="s">&#39;7&#39;</span><span class="p">]</span>
+<span class="gp">In [59]: </span><span class="nb">str</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<span class="gr">Out[59]: </span><span class="s">&#39;[1, 2, 3]&#39;</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">list</span></tt>: Convierte tuplas, diccionarios y cadenas a una lista.</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [60]: </span><span class="nb">list</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="gr">Out[60]: </span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="gp">In [61]: </span><span class="nb">list</span><span class="p">(</span><span class="s">&#39;1457&#39;</span><span class="p">)</span>
+<span class="gr">Out[61]: </span><span class="p">[</span><span class="s">&#39;1&#39;</span><span class="p">,</span> <span class="s">&#39;4&#39;</span><span class="p">,</span> <span class="s">&#39;5&#39;</span><span class="p">,</span> <span class="s">&#39;7&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>Para los diccionarios, <tt class="docutils literal"><span class="pre">list</span></tt> sólo extrae las claves y no los valores</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [60]: </span><span class="nb">list</span><span class="p">({</span><span class="s">&#39;a&#39;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">})</span>
-<span class="gr">Out[60]: </span><span class="p">[</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">]</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [62]: </span><span class="nb">list</span><span class="p">({</span><span class="s">&#39;a&#39;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">})</span>
+<span class="gr">Out[62]: </span><span class="p">[</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first"><tt class="docutils literal"><span class="pre">dict</span></tt>: Convierte una lista de listas, donde cada una tiene dos elementos,
 a un diccionario.</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [61]: </span><span class="nb">dict</span><span class="p">([[</span><span class="mi">10</span><span class="p">,</span> <span class="s">&#39;a&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">15</span><span class="p">,</span> <span class="s">&#39;t&#39;</span><span class="p">]])</span>
-<span class="gr">Out[61]: </span><span class="p">{</span><span class="mi">10</span><span class="p">:</span> <span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span> <span class="s">&#39;t&#39;</span><span class="p">}</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [63]: </span><span class="nb">dict</span><span class="p">([[</span><span class="mi">10</span><span class="p">,</span> <span class="s">&#39;a&#39;</span><span class="p">],</span> <span class="p">[</span><span class="mi">15</span><span class="p">,</span> <span class="s">&#39;t&#39;</span><span class="p">]])</span>
+<span class="gr">Out[63]: </span><span class="p">{</span><span class="mi">10</span><span class="p">:</span> <span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span> <span class="s">&#39;t&#39;</span><span class="p">}</span>
 </pre></div>
 </div>
 </li>
@@ -818,22 +831,22 @@ este argumento elevado al cuadrado es:</p>
 </div>
 <p>Podemos comprobar que la función esta operando correctamente al pasarle varios
 argumentos y ver los resultados que retorna:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [62]: </span><span class="n">cuadrado</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="gr">Out[62]: </span><span class="mi">9</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [64]: </span><span class="n">cuadrado</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gr">Out[64]: </span><span class="mi">9</span>
 
-<span class="gp">In [63]: </span><span class="n">cuadrado</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="gr">Out[63]: </span><span class="mi">25</span>
+<span class="gp">In [65]: </span><span class="n">cuadrado</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="gr">Out[65]: </span><span class="mi">25</span>
 
-<span class="gp">In [64]: </span><span class="n">cuadrado</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="gr">Out[64]: </span><span class="mi">100</span>
+<span class="gp">In [66]: </span><span class="n">cuadrado</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="gr">Out[66]: </span><span class="mi">100</span>
 
-<span class="gp">In [65]: </span><span class="n">cuadrado</span><span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">)</span>
+<span class="gp">In [67]: </span><span class="n">cuadrado</span><span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">)</span>
 <span class="go">---------------------------------------------------------------------------</span>
 <span class="go">TypeError                                 Traceback (most recent call last)</span>
-<span class="go">/home/carlos/Trabajo/Ecci/Modelacion y Simulacion/Notas/&lt;ipython-input-65-d15440223ddf&gt; in &lt;module&gt;()</span>
+<span class="go">/home/carlos/Trabajo/Ecci/Modelacion y Simulacion/Notas de Clase/Notas/&lt;ipython-input-67-d15440223ddf&gt; in &lt;module&gt;()</span>
 <span class="go">----&gt; 1 cuadrado(&#39;a&#39;)</span>
 
-<span class="go">/home/carlos/Trabajo/Ecci/Modelacion y Simulacion/Notas/&lt;ipython-input-62-ca512653e72d&gt; in cuadrado(x)</span>
+<span class="go">/home/carlos/Trabajo/Ecci/Modelacion y Simulacion/Notas de Clase/Notas/&lt;ipython-input-64-ca512653e72d&gt; in cuadrado(x)</span>
 <span class="go">      1 def cuadrado(x):</span>
 <span class="go">----&gt; 2      return x**2</span>
 
@@ -853,13 +866,13 @@ devuelva</p>
 <li><p class="first">Definir una función <tt class="docutils literal"><span class="pre">imprimir_doble</span></tt> que tome un argumento <tt class="docutils literal"><span class="pre">x</span></tt> y lo
 imprima dos veces, con un espacio entre el una palabra y la siguiente. Por
 ejemplo, al evaluarla debe retornar:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [66]: </span><span class="n">imprimir_doble</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [68]: </span><span class="n">imprimir_doble</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 <span class="go">5 5</span>
 
-<span class="gp">In [67]: </span><span class="n">imprimir_doble</span><span class="p">(</span><span class="s">&#39;hola&#39;</span><span class="p">)</span>
+<span class="gp">In [69]: </span><span class="n">imprimir_doble</span><span class="p">(</span><span class="s">&#39;hola&#39;</span><span class="p">)</span>
 <span class="go">hola hola</span>
 
-<span class="gp">In [68]: </span><span class="n">imprimir_doble</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
+<span class="gp">In [70]: </span><span class="n">imprimir_doble</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">4</span><span class="p">])</span>
 <span class="go">[3, 9, 4] [3, 9, 4]</span>
 </pre></div>
 </div>
@@ -871,29 +884,29 @@ teorema de Pitágoras:</p>
 <p><img src="../_images/math/25cc58bea4e831eb804d3b7753f1912f3092f54c.png" alt="\sqrt{\left(x_{1}-y_{1}\right)^{2}+\left(x_{2}-y_{2}\right)^{2}}" /></p>
 </div><p>Pueden comprobar que la función está haciendo su trabajo correctamente si
 retorna estos valores:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [69]: </span><span class="n">distancia</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
-<span class="gr">Out[69]: </span><span class="mf">1.4142135623730951</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [71]: </span><span class="n">distancia</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+<span class="gr">Out[71]: </span><span class="mf">1.4142135623730951</span>
 
-<span class="gp">In [70]: </span><span class="n">distancia</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
-<span class="gr">Out[70]: </span><span class="mf">3.1622776601683795</span>
+<span class="gp">In [72]: </span><span class="n">distancia</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="gr">Out[72]: </span><span class="mf">3.1622776601683795</span>
 </pre></div>
 </div>
 </li>
 <li><p id="digitos">Definir una función <tt class="docutils literal"><span class="pre">digitos</span></tt> que tome un numero <tt class="docutils literal"><span class="pre">x</span></tt> y retorne los
 dígitos de que se compone como números enteros. Por ejemplo, digitos debe
 retornar:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [71]: </span><span class="n">digitos</span><span class="p">(</span><span class="mi">1234</span><span class="p">)</span>
-<span class="gr">Out[71]: </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [73]: </span><span class="n">digitos</span><span class="p">(</span><span class="mi">1234</span><span class="p">)</span>
+<span class="gr">Out[73]: </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
 
-<span class="gp">In [72]: </span><span class="n">digitos</span><span class="p">(</span><span class="mi">99861</span><span class="p">)</span>
-<span class="gr">Out[72]: </span><span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="gp">In [74]: </span><span class="n">digitos</span><span class="p">(</span><span class="mi">99861</span><span class="p">)</span>
+<span class="gr">Out[74]: </span><span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>
 <p><em>Sugerencia</em>: Utilizar los comandos de conversión entre tipos y el comando
 <tt class="docutils literal"><span class="pre">map</span></tt> para aplicar una función a todos los elementos de una lista. Por
 ejemplo, podemos usar <tt class="docutils literal"><span class="pre">map</span></tt> con <tt class="docutils literal"><span class="pre">cuadrado</span></tt> de la siguiente forma:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [73]: </span><span class="nb">map</span><span class="p">(</span><span class="n">cuadrado</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
-<span class="gr">Out[73]: </span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [75]: </span><span class="nb">map</span><span class="p">(</span><span class="n">cuadrado</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<span class="gr">Out[75]: </span><span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
 </pre></div>
 </div>
 </li>
@@ -919,13 +932,13 @@ sencillo ejemplo para observar como es su sintaxis en Python:</p>
 </pre></div>
 </div>
 <p>Al aplicar esta función a distintos números obtenemos:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [74]: </span><span class="n">mayor_o_menor</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [76]: </span><span class="n">mayor_o_menor</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 <span class="go">2 es menor que 5</span>
 
-<span class="gp">In [75]: </span><span class="n">mayor_o_menor</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="gp">In [77]: </span><span class="n">mayor_o_menor</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 <span class="go">100 es mayor que 10</span>
 
-<span class="gp">In [76]: </span><span class="n">mayor_o_menor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="gp">In [78]: </span><span class="n">mayor_o_menor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="go">1 y 1 son iguales</span>
 </pre></div>
 </div>
@@ -973,14 +986,14 @@ de usar en <tt class="docutils literal"><span class="pre">if</span></tt> son:</p
 <p>A excepción de <tt class="docutils literal"><span class="pre">in</span></tt> y <tt class="docutils literal"><span class="pre">not</span></tt>, todos los demás operadores son similares a los
 usados en otros lenguajes de programación, por lo que no vamos a mirar ejemplos
 de ellos. Veamos, por tanto, sólo como funcionan los primeros:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [77]: </span><span class="mi">3</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
-<span class="gr">Out[77]: </span><span class="bp">False</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [79]: </span><span class="mi">3</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="gr">Out[79]: </span><span class="bp">False</span>
 
-<span class="gp">In [78]: </span><span class="mi">3</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="gr">Out[78]: </span><span class="bp">True</span>
+<span class="gp">In [80]: </span><span class="mi">3</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="gr">Out[80]: </span><span class="bp">True</span>
 
-<span class="gp">In [79]: </span><span class="ow">not</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">5</span>
-<span class="gr">Out[79]: </span><span class="bp">True</span>
+<span class="gp">In [81]: </span><span class="ow">not</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">5</span>
+<span class="gr">Out[81]: </span><span class="bp">True</span>
 </pre></div>
 </div>
 <p>A través de estos ejemplos también podemos notar que los valores de verdad en
@@ -991,30 +1004,30 @@ respectivamente.</p>
 <dd><ul class="first last">
 <li><p class="first">Definir una función <tt class="docutils literal"><span class="pre">absoluto(x)</span></tt> que tome un número entero y retorne su
 valor absoluto, así:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [80]: </span><span class="n">absoluto</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
-<span class="gr">Out[80]: </span><span class="mi">6</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [82]: </span><span class="n">absoluto</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="gr">Out[82]: </span><span class="mi">6</span>
 
-<span class="gp">In [81]: </span><span class="n">absoluto</span><span class="p">(</span><span class="mf">100.22</span><span class="p">)</span>
-<span class="gr">Out[81]: </span><span class="mf">100.22</span>
+<span class="gp">In [83]: </span><span class="n">absoluto</span><span class="p">(</span><span class="mf">100.22</span><span class="p">)</span>
+<span class="gr">Out[83]: </span><span class="mf">100.22</span>
 
-<span class="gp">In [82]: </span><span class="n">absoluto</span><span class="p">(</span><span class="o">-</span><span class="mf">18.7</span><span class="p">)</span>
-<span class="gr">Out[82]: </span><span class="mf">18.7</span>
+<span class="gp">In [84]: </span><span class="n">absoluto</span><span class="p">(</span><span class="o">-</span><span class="mf">18.7</span><span class="p">)</span>
+<span class="gr">Out[84]: </span><span class="mf">18.7</span>
 </pre></div>
 </div>
 </li>
 <li><p class="first">Definir una función <tt class="docutils literal"><span class="pre">es_divisible_entre_siete(x)</span></tt> que imprima si un
 número es o no es divisible entre 7. La función debe retornar resultados
 como los siguientes:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [83]: </span><span class="n">es_divisible_entre_siete</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [85]: </span><span class="n">es_divisible_entre_siete</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
 <span class="go">12 no es divisible entre 7</span>
 
-<span class="gp">In [84]: </span><span class="n">es_divisible_entre_siete</span><span class="p">(</span><span class="mi">14</span><span class="p">)</span>
+<span class="gp">In [86]: </span><span class="n">es_divisible_entre_siete</span><span class="p">(</span><span class="mi">14</span><span class="p">)</span>
 <span class="go">14 es divisible entre 7</span>
 
-<span class="gp">In [85]: </span><span class="n">es_divisible_entre_siete</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span>
+<span class="gp">In [87]: </span><span class="n">es_divisible_entre_siete</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span>
 <span class="go">32 no es divisible entre 7</span>
 
-<span class="gp">In [86]: </span><span class="n">es_divisible_entre_siete</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span>
+<span class="gp">In [88]: </span><span class="n">es_divisible_entre_siete</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span>
 <span class="go">21 es divisible entre 7</span>
 </pre></div>
 </div>
@@ -1022,20 +1035,20 @@ como los siguientes:</p>
 es múltiplo de otro. Este operador retorna el resto de la división entre
 dos números. Por tanto, si un número divide exactamente a otro, retorna
 <tt class="docutils literal"><span class="pre">0</span></tt>, sino retorna cualquier otro número. Veamos algunos ejemplos:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [87]: </span><span class="mi">12</span><span class="o">%</span><span class="mi">4</span>
-<span class="gr">Out[87]: </span><span class="mi">0</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [89]: </span><span class="mi">12</span><span class="o">%</span><span class="mi">4</span>
+<span class="gr">Out[89]: </span><span class="mi">0</span>
 
-<span class="gp">In [88]: </span><span class="mi">12</span><span class="o">%</span><span class="mi">6</span>
-<span class="gr">Out[88]: </span><span class="mi">0</span>
-
-<span class="gp">In [89]: </span><span class="mi">12</span><span class="o">%</span><span class="mi">5</span>
-<span class="gr">Out[89]: </span><span class="mi">2</span>
-
-<span class="gp">In [90]: </span><span class="mi">25</span><span class="o">%</span><span class="mi">5</span>
+<span class="gp">In [90]: </span><span class="mi">12</span><span class="o">%</span><span class="mi">6</span>
 <span class="gr">Out[90]: </span><span class="mi">0</span>
 
-<span class="gp">In [91]: </span><span class="mi">25</span><span class="o">%</span><span class="mi">6</span>
-<span class="gr">Out[91]: </span><span class="mi">1</span>
+<span class="gp">In [91]: </span><span class="mi">12</span><span class="o">%</span><span class="mi">5</span>
+<span class="gr">Out[91]: </span><span class="mi">2</span>
+
+<span class="gp">In [92]: </span><span class="mi">25</span><span class="o">%</span><span class="mi">5</span>
+<span class="gr">Out[92]: </span><span class="mi">0</span>
+
+<span class="gp">In [93]: </span><span class="mi">25</span><span class="o">%</span><span class="mi">6</span>
+<span class="gr">Out[93]: </span><span class="mi">1</span>
 </pre></div>
 </div>
 </li>
@@ -1043,10 +1056,10 @@ dos números. Por tanto, si un número divide exactamente a otro, retorna
 <tt class="docutils literal"><span class="pre">es_divisible_entre_n(x,</span> <span class="pre">n)</span></tt> que tome dos números enteros e imprima si el
 primero es divisible entre el segundo, así: (Tomado de <em>Aprenda a pensar
 como un programador con Python</em>)</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [92]: </span><span class="n">es_divisible_entre_n</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [94]: </span><span class="n">es_divisible_entre_n</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
 <span class="go">20 es divisible entre 4</span>
 
-<span class="gp">In [93]: </span><span class="n">es_divisible_entre_n</span><span class="p">(</span><span class="mi">36</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="gp">In [95]: </span><span class="n">es_divisible_entre_n</span><span class="p">(</span><span class="mi">36</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 <span class="go">36 no es divisible entre 5</span>
 </pre></div>
 </div>
@@ -1056,11 +1069,11 @@ elemento y retorne una nueva lista en la que esté añadido el elemento, pero
 sólo si éste <strong>no</strong> hace parte de la lista original (Tomado de
 <em>Introducción a Mathematica</em> del Prof. Jurgen Tischer).</p>
 <p>Por ejemplo:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [94]: </span><span class="n">agregar_nuevo</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="mi">11</span><span class="p">)</span>
-<span class="gr">Out[94]: </span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [96]: </span><span class="n">agregar_nuevo</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="mi">11</span><span class="p">)</span>
+<span class="gr">Out[96]: </span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
 
-<span class="gp">In [95]: </span><span class="n">agregar_nuevo</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="mi">9</span><span class="p">)</span>
-<span class="gr">Out[95]: </span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="gp">In [97]: </span><span class="n">agregar_nuevo</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="mi">9</span><span class="p">)</span>
+<span class="gr">Out[97]: </span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
 </pre></div>
 </div>
 </li>
@@ -1076,7 +1089,7 @@ de utilizar un contador cuyo valor va aumentando o disminuyendo durante el
 ciclo, se toma una secuencia completa (una lista, una tupla, o una cadena), y
 se recorren sus elementos en el orden en que aparecen en ella.</p>
 <p>Observemos algunos ejemplos:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [96]: </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">]:</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [98]: </span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">4</span><span class="p">]:</span>
 <span class="gp">   ....:</span>      <span class="k">print</span> <span class="n">x</span>
 <span class="gp">   ....:</span> 
 <span class="go">3</span>
@@ -1084,13 +1097,13 @@ se recorren sus elementos en el orden en que aparecen en ella.</p>
 <span class="go">12</span>
 <span class="go">4</span>
 
-<span class="gp">In [97]: </span><span class="n">prefijos</span> <span class="o">=</span> <span class="s">&quot;JKLMNOPQ&quot;</span>
+<span class="gp">In [99]: </span><span class="n">prefijos</span> <span class="o">=</span> <span class="s">&quot;JKLMNOPQ&quot;</span>
 
-<span class="gp">In [98]: </span><span class="n">sufijos</span> <span class="o">=</span> <span class="s">&quot;ack&quot;</span>
+<span class="gp">In [100]: </span><span class="n">sufijos</span> <span class="o">=</span> <span class="s">&quot;ack&quot;</span>
 
-<span class="gp">In [99]: </span><span class="k">for</span> <span class="n">letra</span> <span class="ow">in</span> <span class="n">prefijos</span><span class="p">:</span>
-<span class="gp">   ....:</span>      <span class="k">print</span> <span class="n">letra</span> <span class="o">+</span> <span class="n">sufijos</span>
-<span class="gp">   ....:</span> 
+<span class="gp">In [101]: </span><span class="k">for</span> <span class="n">letra</span> <span class="ow">in</span> <span class="n">prefijos</span><span class="p">:</span>
+<span class="gp">   .....:</span>      <span class="k">print</span> <span class="n">letra</span> <span class="o">+</span> <span class="n">sufijos</span>
+<span class="gp">   .....:</span> 
 <span class="go">Jack</span>
 <span class="go">Kack</span>
 <span class="go">Lack</span>
@@ -1100,7 +1113,7 @@ se recorren sus elementos en el orden en que aparecen en ella.</p>
 <span class="go">Pack</span>
 <span class="go">Qack</span>
 
-<span class="gp">In [100]: </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+<span class="gp">In [102]: </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
 <span class="gp">   .....:</span>      <span class="k">print</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span>
 <span class="gp">   .....:</span> 
 <span class="go">0</span>
@@ -1119,11 +1132,11 @@ se recorren sus elementos en el orden en que aparecen en ella.</p>
 pues sirve para generar una lista con todos los números desde 0 hasta <em>n</em>-1,
 donde <em>n</em> es el valor que recibe. También puede usarse con dos valores, uno
 como límite inferior y el otro como límite superior, así:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [101]: </span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-<span class="gr">Out[101]: </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">19</span><span class="p">]</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [103]: </span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="gr">Out[103]: </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">19</span><span class="p">]</span>
 
-<span class="gp">In [102]: </span><span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
-<span class="gr">Out[102]: </span><span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">24</span><span class="p">]</span>
+<span class="gp">In [104]: </span><span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+<span class="gr">Out[104]: </span><span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">24</span><span class="p">]</span>
 </pre></div>
 </div>
 <dl class="docutils">
@@ -1135,17 +1148,17 @@ como límite inferior y el otro como límite superior, así:</p>
 <li><p class="first">Definir una función <tt class="docutils literal"><span class="pre">es_primo(x)</span></tt> que tome un número <tt class="docutils literal"><span class="pre">x</span></tt> y verifique si
 es divisible entre todos los números menores a <tt class="docutils literal"><span class="pre">x</span></tt>. Si lo es, entonces debe
 retornar <tt class="xref docutils literal"><span class="pre">False</span></tt> y si no <tt class="xref docutils literal"><span class="pre">True</span></tt>. Por ejemplo:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [103]: </span><span class="n">es_primo</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="gr">Out[103]: </span><span class="bp">False</span>
-
-<span class="gp">In [104]: </span><span class="n">es_primo</span><span class="p">(</span><span class="mi">17</span><span class="p">)</span>
-<span class="gr">Out[104]: </span><span class="bp">True</span>
-
-<span class="gp">In [105]: </span><span class="n">es_primo</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [105]: </span><span class="n">es_primo</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 <span class="gr">Out[105]: </span><span class="bp">False</span>
 
-<span class="gp">In [106]: </span><span class="n">es_primo</span><span class="p">(</span><span class="mi">23</span><span class="p">)</span>
+<span class="gp">In [106]: </span><span class="n">es_primo</span><span class="p">(</span><span class="mi">17</span><span class="p">)</span>
 <span class="gr">Out[106]: </span><span class="bp">True</span>
+
+<span class="gp">In [107]: </span><span class="n">es_primo</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+<span class="gr">Out[107]: </span><span class="bp">False</span>
+
+<span class="gp">In [108]: </span><span class="n">es_primo</span><span class="p">(</span><span class="mi">23</span><span class="p">)</span>
+<span class="gr">Out[108]: </span><span class="bp">True</span>
 </pre></div>
 </div>
 <p><em>Sugerencia</em>: Modificar la función <tt class="docutils literal"><span class="pre">es_divisible_entre_n</span></tt> para que
@@ -1158,11 +1171,11 @@ revisar?</p>
 <p>Para ello, definir una nueva función <tt class="docutils literal"><span class="pre">es_primo_veloz(x)</span></tt> y comparar los
 tiempos de ejecución entre ella y <tt class="docutils literal"><span class="pre">es_primo</span></tt> usando el comando
 <tt class="docutils literal"><span class="pre">%timeit</span></tt> en la consola, así:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [107]: </span><span class="o">%</span><span class="n">timeit</span> <span class="n">es_primo</span><span class="p">(</span><span class="mi">600</span><span class="p">)</span>
-<span class="go">100000 loops, best of 3: 5.68 us per loop</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [109]: </span><span class="o">%</span><span class="n">timeit</span> <span class="n">es_primo</span><span class="p">(</span><span class="mi">600</span><span class="p">)</span>
+<span class="go">100000 loops, best of 3: 5.12 us per loop</span>
 
-<span class="gp">In [108]: </span><span class="o">%</span><span class="n">timeit</span> <span class="n">es_primo_veloz</span><span class="p">(</span><span class="mi">600</span><span class="p">)</span>
-<span class="go">100000 loops, best of 3: 2.74 us per loop</span>
+<span class="gp">In [110]: </span><span class="o">%</span><span class="n">timeit</span> <span class="n">es_primo_veloz</span><span class="p">(</span><span class="mi">600</span><span class="p">)</span>
+<span class="go">100000 loops, best of 3: 2.54 us per loop</span>
 </pre></div>
 </div>
 </li>
@@ -1181,8 +1194,8 @@ intercuartil de una lista. Recordar que éste se define como:</p>
 </pre></div>
 </div>
 <p>el rango intercuartil es:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [109]: </span><span class="n">rango_intercuartil</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
-<span class="gr">Out[109]: </span><span class="mf">16.15</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [111]: </span><span class="n">rango_intercuartil</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
+<span class="gr">Out[111]: </span><span class="mf">16.15</span>
 </pre></div>
 </div>
 <p><em>Sugerencias</em>:</p>
@@ -1190,8 +1203,8 @@ intercuartil de una lista. Recordar que éste se define como:</p>
 <li><p class="first">Definir primero una función <tt class="docutils literal"><span class="pre">mediana(li)</span></tt> que calcule la mediana de una
 lista, de la misma forma en que se hizo en el <a class="reference internal" href="#mediana">ejercicio</a> de la sección
 de <a class="reference internal" href="#listas">Listas</a>. La mediana de la lista anterior, por ejemplo, es:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [110]: </span><span class="n">mediana</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
-<span class="gr">Out[110]: </span><span class="mf">42.78</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [112]: </span><span class="n">mediana</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
+<span class="gr">Out[112]: </span><span class="mf">42.78</span>
 </pre></div>
 </div>
 </li>
@@ -1212,8 +1225,8 @@ una lista, usando la fórmula:</p>
 </div><p>donde <img class="math" src="../_images/math/f06e84fe84a6c63a9c2c392af11652f6e0d72cf4.png" alt="\bar{x}"/> es el promedio y <img class="math" src="../_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n"/> es el número total de
 datos.</p>
 <p>Por ejemplo, la desviación estándar de la lista del ejemplo anterior es:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [111]: </span><span class="n">desv_est</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
-<span class="gr">Out[111]: </span><span class="mf">10.193054313544058</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [113]: </span><span class="n">desv_est</span><span class="p">(</span><span class="n">li</span><span class="p">)</span>
+<span class="gr">Out[113]: </span><span class="mf">10.193054313544058</span>
 </pre></div>
 </div>
 </li>
@@ -1235,11 +1248,11 @@ un ciclo, como si hay que hacerlo con <tt class="docutils literal"><span class="
 <ol class="arabic">
 <li><p class="first">En este primer ejemplo, imprimimos la lista de todos los elementos de
 <tt class="docutils literal"><span class="pre">li</span></tt>, pero seleccionándolos de <tt class="docutils literal"><span class="pre">li</span></tt> por medio de su índice.</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [112]: </span><span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [114]: </span><span class="n">li</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span>
 
-<span class="gp">In [113]: </span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="gp">In [115]: </span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="gp">In [114]: </span><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
+<span class="gp">In [116]: </span><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">:</span>
 <span class="gp">   .....:</span>      <span class="k">print</span> <span class="n">li</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 <span class="gp">   .....:</span>      <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="gp">   .....:</span> 
@@ -1256,11 +1269,11 @@ como se hace en C o C++. Otras abreviaciones que funcionan en Python son:
 </li>
 <li><p class="first">En este ejemplo vamos a imprimir los 20 primeros números que son divisibles
 entre 4:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [115]: </span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [117]: </span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="gp">In [116]: </span><span class="n">j</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="gp">In [118]: </span><span class="n">j</span> <span class="o">=</span> <span class="mi">1</span>
 
-<span class="gp">In [117]: </span><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">20</span><span class="p">:</span>
+<span class="gp">In [119]: </span><span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">20</span><span class="p">:</span>
 <span class="gp">   .....:</span>      <span class="k">if</span> <span class="n">es_divisible_entre_n</span><span class="p">(</span><span class="n">j</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
 <span class="gp">   .....:</span>          <span class="k">print</span> <span class="n">j</span>
 <span class="gp">   .....:</span>          <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
@@ -1317,8 +1330,8 @@ imprima todos los números desde <tt class="docutils literal"><span class="pre">
 <tt class="docutils literal"><span class="pre">lista_de_primos(n)</span></tt> que genere la lista de los <tt class="docutils literal"><span class="pre">n</span></tt> primeros números
 primos. Para que puedan comparar, a continuación aparece la lista de los 20
 primeros números primos:</p>
-<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [118]: </span><span class="n">lista_de_primos</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
-<span class="gr">Out[118]: </span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">53</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">61</span><span class="p">,</span> <span class="mi">67</span><span class="p">,</span> <span class="mi">71</span><span class="p">]</span>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [120]: </span><span class="n">lista_de_primos</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="gr">Out[120]: </span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">29</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">37</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">43</span><span class="p">,</span> <span class="mi">47</span><span class="p">,</span> <span class="mi">53</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">61</span><span class="p">,</span> <span class="mi">67</span><span class="p">,</span> <span class="mi">71</span><span class="p">]</span>
 </pre></div>
 </div>
 <p><em>Sugerencia</em>: Definir una lista vacía y utilizar su método append para
@@ -1342,9 +1355,400 @@ deseada.</p>
 </div>
 <div class="section" id="clases">
 <h2>Clases<a class="headerlink" href="#clases" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Python es un muy buen lenguaje orientado a objetos (como Java) en el que es muy
+sencillo definir y trabajar con clases. En las secciones anteriores hemos
+tenido la oportunidad de utilizar los métodos de cadenas y listas para resolver
+varios ejercicios, lo que indica que en su implementación ambos tipos son
+clases, cosa que también cierta para los demás (aún los números son clases!).</p>
+<p>En esta sección veremos como definir nuestras propias clases y como asociarle
+sus correspondientes atributos y métodos.</p>
+<div class="section" id="definicion-e-inicializacion">
+<h3>Definición e inicialización<a class="headerlink" href="#definicion-e-inicializacion" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>En general, una clase es un objeto en el que se reúnen varias funciones
+(llamadas métodos) y variables (llamadas atributos) definidas por conveniencia
+por el usuario para resolver un problema en particular, organizar su código o
+reutilizarlo más adelante.</p>
+<p>En Python las clases se definen con la palabra <tt class="docutils literal"><span class="pre">class</span></tt> y se inicializan
+usando el método <tt class="docutils literal"><span class="pre">__init__</span></tt>, que es una función cuyo primer argumento
+<strong>siempre</strong> debe ser la palabra <tt class="docutils literal"><span class="pre">self</span></tt>. Los argumentos que vengan después de
+<tt class="docutils literal"><span class="pre">self</span></tt> van a usarse para darle valores iniciales a los atributos de la
+clase. Miremos como se hace con un ejemplo:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">NumeroComplejo</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">real</span> <span class="o">=</span> <span class="n">r</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">img</span> <span class="o">=</span> <span class="n">i</span>
+</pre></div>
+</div>
+<p>Vamos a usar esta clase para representar números complejos, por lo que debe
+tener dos atributos: una parte real y una parte imaginaria. En este caso, éstos
+están dados por <tt class="docutils literal"><span class="pre">real</span></tt> e <tt class="docutils literal"><span class="pre">img</span></tt>, respectivamente.</p>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Es muy importante notar que para diferenciar los atributos de una clase de
+las variables locales, en Python todo atributo debe ir precedido de
+<tt class="docutils literal"><span class="pre">self.</span></tt>, como en <tt class="docutils literal"><span class="pre">self.real</span></tt> y <tt class="docutils literal"><span class="pre">self.img</span></tt>.</p>
+</div>
+<p>Además de <tt class="docutils literal"><span class="pre">self</span></tt>, podemos ver que <tt class="docutils literal"><span class="pre">__init__</span></tt> recibe los argumentos <tt class="docutils literal"><span class="pre">r</span></tt> e
+<tt class="docutils literal"><span class="pre">i</span></tt>, que se utilizan para inicializar los atributos mencionados.</p>
+<p>Para crear una instancia de la clase es necesario llamarla por su nombre, con
+el número de argumentos declarados en <tt class="docutils literal"><span class="pre">__init__</span></tt> (sin contar <tt class="docutils literal"><span class="pre">self</span></tt>) y
+asignársela a una variable, así:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [121]: </span><span class="n">z</span> <span class="o">=</span> <span class="n">NumeroComplejo</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Para comprobar que la inicialización ha funcionado correctamente, podemos
+inspeccionar los atributos de la clase directamente:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [122]: </span><span class="n">z</span><span class="o">.</span><span class="n">real</span>
+<span class="gr">Out[122]: </span><span class="mi">1</span>
+
+<span class="gp">In [123]: </span><span class="n">z</span><span class="o">.</span><span class="n">img</span>
+<span class="gr">Out[123]: </span><span class="mi">2</span>
+</pre></div>
+</div>
+<p>De esta forma puede certificarse que, efectivamente, <tt class="docutils literal"><span class="pre">z</span></tt> es un número
+complejo con parte real <tt class="docutils literal"><span class="pre">1</span></tt> y parte imaginaria <tt class="docutils literal"><span class="pre">2</span></tt>.</p>
+<p>Una vez definida una instancia, también es posible modificar sus atributos por
+medio de asignación, así:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [124]: </span><span class="n">z</span><span class="o">.</span><span class="n">real</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="gp">In [125]: </span><span class="n">z</span><span class="o">.</span><span class="n">real</span>
+<span class="gr">Out[125]: </span><span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="metodos">
+<h3>Métodos<a class="headerlink" href="#metodos" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Los métodos son funciones asociadas a una clase que operan sobre sus
+atributos. Por ejemplo, a la clase anterior le podemos añadir un método que
+calcule el módulo de un número complejo con la fórmula:</p>
+<div class="math">
+<p><img src="../_images/math/9c8cfea5b157f92f71104cb331dc758f9e9f71a2.png" alt="\left| z \right|=\sqrt{\textrm{Re}\left(z\right)^{2}+\textrm{Im}\left(z\right)^{2}}" /></p>
+</div><p>Para ello redefinimos <tt class="docutils literal"><span class="pre">NumeroComplejo</span></tt> para agregarle un nuevo método
+<tt class="docutils literal"><span class="pre">modulo</span></tt>, así:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">NumeroComplejo</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">real</span> <span class="o">=</span> <span class="n">r</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">img</span> <span class="o">=</span> <span class="n">i</span>
+    <span class="k">def</span> <span class="nf">modulo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+         <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">real</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">img</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">Al igual que para <tt class="docutils literal"><span class="pre">__init__</span></tt>, el primer argumento de todo método debe ser
+<tt class="docutils literal"><span class="pre">self</span></tt>, para que indicar que hace parte de la clase.</p>
+</div>
+<p>Con ello obtenemos el siguiente resultado para el módulo del número complejo
+que habíamos definido arriba:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [126]: </span><span class="n">z</span><span class="o">.</span><span class="n">modulo</span><span class="p">()</span>
+<span class="gr">Out[126]: </span><span class="mf">2.23606797749979</span>
+</pre></div>
+</div>
+<p>Aquí puede parecer un poco extraño que <tt class="docutils literal"><span class="pre">modulo</span></tt> se llame sin argumentos,
+cuando al definirlo en la clase se le había pasado a <tt class="docutils literal"><span class="pre">self</span></tt> como primer
+argumento. Esto se debe a que <tt class="docutils literal"><span class="pre">self</span></tt> no es un argumento en sí, sino que sólo
+se usa para señalar que una función es un método de la clase, como ya se
+mencionó.</p>
+<p>Otra operación que puede hacerse con números complejos es obtener su
+<em>conjugado</em>. El conjugado de un complejo <img class="math" src="../_images/math/b13f21416d84e13708696f34dea81026cda583c9.png" alt="z"/>, es un nuevo número complejo
+que se denota <img class="math" src="../_images/math/e2af86094c2d1dd57039c8e83bcc4193cf421714.png" alt="\bar{z}"/> y se define como</p>
+<div class="math">
+<p><img src="../_images/math/fe5c8fd511a321a23d412a402b3b3a3cae594a9a.png" alt="z=a+ib \longrightarrow \bar{z}=a-ib" /></p>
+</div><p>Para obtener el conjugado podemos entonces agregar un nuevo método a nuestra
+clase, de la siguiente forma:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">NumeroComplejo</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">real</span> <span class="o">=</span> <span class="n">r</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">img</span> <span class="o">=</span> <span class="n">i</span>
+    <span class="k">def</span> <span class="nf">modulo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+         <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">real</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">img</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">conjugado</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+         <span class="k">return</span> <span class="n">NumeroComplejo</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">real</span><span class="p">,</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">img</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Para calcular el conjugado de <tt class="docutils literal"><span class="pre">z</span></tt> sólo debemos llamar el método:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [127]: </span><span class="n">z1</span> <span class="o">=</span> <span class="n">z</span><span class="o">.</span><span class="n">conjugado</span><span class="p">()</span>
+
+<span class="gp">In [128]: </span><span class="n">z1</span><span class="o">.</span><span class="n">real</span>
+<span class="gr">Out[128]: </span><span class="mi">1</span>
+
+<span class="gp">In [129]: </span><span class="n">z1</span><span class="o">.</span><span class="n">img</span>
+<span class="gr">Out[129]: </span><span class="o">-</span><span class="mi">2</span>
+</pre></div>
+</div>
+<p>Finalmente, vamos a añadir una función que retorne el producto de dos números
+complejos. Dados dos números</p>
+<div class="math">
+<p><img src="../_images/math/f948c2b195ed02e1ef535c230d8f0bc06fd1f712.png" alt="z = a + ib
+
+w = c + id" /></p>
+</div><p>su producto está dado por:</p>
+<div class="math">
+<p><img src="../_images/math/a3cc51f51a37332a953f4c66b814a0320f3d5caf.png" alt="z \times w = (ac - bd) + i(ad + bc)" /></p>
+</div><p>Para ello podemos escribir el siguiente método, llamado <tt class="docutils literal"><span class="pre">producto</span></tt>, en
+nuestra clase:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">NumeroComplejo</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">real</span> <span class="o">=</span> <span class="n">r</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">img</span> <span class="o">=</span> <span class="n">i</span>
+    <span class="k">def</span> <span class="nf">modulo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+         <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">real</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">img</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">conjugado</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+         <span class="k">return</span> <span class="n">NumeroComplejo</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">real</span><span class="p">,</span> <span class="o">-</span><span class="bp">self</span><span class="o">.</span><span class="n">img</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">producto</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">w</span><span class="p">):</span>
+         <span class="n">r</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">real</span> <span class="o">*</span> <span class="n">w</span><span class="o">.</span><span class="n">real</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">img</span> <span class="o">*</span> <span class="n">w</span><span class="o">.</span><span class="n">img</span>
+         <span class="n">i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">real</span> <span class="o">*</span> <span class="n">w</span><span class="o">.</span><span class="n">img</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">img</span> <span class="o">*</span> <span class="n">w</span><span class="o">.</span><span class="n">real</span>
+         <span class="k">return</span> <span class="n">NumeroComplejo</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [130]: </span><span class="n">w</span> <span class="o">=</span> <span class="n">NumeroComplejo</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="o">-</span><span class="mi">7</span><span class="p">)</span>
+
+<span class="gp">In [131]: </span><span class="n">x</span> <span class="o">=</span> <span class="n">z</span><span class="o">.</span><span class="n">producto</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+
+<span class="gp">In [132]: </span><span class="n">x</span><span class="o">.</span><span class="n">real</span>
+<span class="gr">Out[132]: </span><span class="mi">18</span>
+
+<span class="gp">In [133]: </span><span class="n">x</span><span class="o">.</span><span class="n">img</span>
+<span class="gr">Out[133]: </span><span class="mi">1</span>
+</pre></div>
+</div>
+<p>Para comprobar que <tt class="docutils literal"><span class="pre">producto</span></tt> está funcionando correctamente podemos usar la
+siguiente fórmula, que relaciona el módulo de un número complejo con su
+conjugado:</p>
+<div class="math">
+<p><img src="../_images/math/50e3717374cee51ed41982953957771b7eb0ac19.png" alt="\left| z \right| = \sqrt{\textrm{Re} \left( z \times \bar{z} \right)}" /></p>
+</div><div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [134]: </span><span class="n">z2</span> <span class="o">=</span> <span class="n">z</span><span class="o">.</span><span class="n">producto</span><span class="p">(</span><span class="n">z</span><span class="o">.</span><span class="n">conjugado</span><span class="p">())</span>
+
+<span class="gp">In [135]: </span><span class="p">(</span><span class="n">z2</span><span class="o">.</span><span class="n">real</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">==</span> <span class="n">z</span><span class="o">.</span><span class="n">modulo</span><span class="p">()</span>
+<span class="gr">Out[135]: </span><span class="bp">True</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt><strong>Ejercicios</strong></dt>
+<dd><ul class="first last">
+<li><p class="first">Definir una clase <tt class="docutils literal"><span class="pre">Vector3D</span></tt> para representar vectores en 3
+dimensiones, con las siguientes características:</p>
+<ol class="arabic">
+<li><p class="first">Tres atributos: <tt class="docutils literal"><span class="pre">x</span></tt>, <tt class="docutils literal"><span class="pre">y</span></tt>, y <tt class="docutils literal"><span class="pre">z</span></tt>, usados para guardar sus
+coordenadas.</p>
+</li>
+<li><p class="first">Un método llamado <tt class="docutils literal"><span class="pre">punto</span></tt> que calcule el producto punto entre dos
+vectores, mediante la fórmula:</p>
+<div class="math">
+<p><img src="../_images/math/9e90c1a5797b89bfbc55ede43c2d7ef9df0ba2a1.png" alt="\vec{v} \cdot \vec{w} = v_{x}w_{x} + v_{y}w_{y} + v_{z}w_{z}" /></p>
+</div></li>
+</ol>
+<blockquote>
+<div><p>Por ejemplo, para los dos vectores definidos a continuación:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [136]: </span><span class="n">v</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="gp">In [137]: </span><span class="n">w</span> <span class="o">=</span> <span class="n">Vector3D</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Su producto punto es:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [138]: </span><span class="n">v</span><span class="o">.</span><span class="n">punto</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+<span class="gr">Out[138]: </span><span class="mi">5</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic" start="3">
+<li><p class="first">Un método llamado <tt class="docutils literal"><span class="pre">cruz</span></tt> que calcule el producto cruz entre dos
+vectores mediante la fórmula:</p>
+<div class="math">
+<p><img src="../_images/math/aa8836615186969ad66c15cbb07f46e522635f80.png" alt="\vec{v} \times \vec{w} = \left(v_{y}w_{z}-v_{z}w_{y}\right)\hat{i} -
+\left(v_{x}w_{z}-v_{z}w_{x}\right)\hat{j} + \left(v_{x}w_{y}-
+v_{y}w_{x}\right)\hat{k}" /></p>
+</div><p>Por ejemplo, para los vectores definidos arriba el producto
+<img class="math" src="../_images/math/5c0b3389754f5b3706b5ac606a8fbc24fefac4e9.png" alt="\vec{v} \times \vec{w}"/> es igual a:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [139]: </span><span class="n">u1</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">cruz</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+
+<span class="gp">In [140]: </span><span class="n">u1</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">u1</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">u1</span><span class="o">.</span><span class="n">z</span>
+<span class="gr">Out[140]: </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Mientras que <img class="math" src="../_images/math/1f06e7a83842817add132a3ddd9ab3ec6acbcefe.png" alt="\vec{w} \times \vec{v}"/> es:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [141]: </span><span class="n">u2</span> <span class="o">=</span> <span class="n">w</span><span class="o">.</span><span class="n">cruz</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+
+<span class="gp">In [142]: </span><span class="n">u2</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">u2</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">u2</span><span class="o">.</span><span class="n">z</span>
+<span class="gr">Out[142]: </span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</li>
+<li><p class="first">Redefinir la clase anterior para que en lugar de los atributos, <tt class="docutils literal"><span class="pre">x</span></tt>,
+<tt class="docutils literal"><span class="pre">y</span></tt>, y <tt class="docutils literal"><span class="pre">z</span></tt>, tenga uno sólo llamado <tt class="docutils literal"><span class="pre">coord</span></tt>, que sea una lista de tres
+elementos. También redefinir los métodos según esto.</p>
+<p><em>Sugerencia</em>: En el método <tt class="docutils literal"><span class="pre">__init__</span></tt> revisar que la lista que se va a
+guardar en <tt class="docutils literal"><span class="pre">coord</span></tt> tenga <strong>exactamente</strong> tres elementos. Si tiene más o
+menos, asignarle a <tt class="docutils literal"><span class="pre">coord</span></tt> una lista vacía.</p>
+</li>
+<li><p class="first">Definir una clase <tt class="docutils literal"><span class="pre">Tiempo</span></tt> para representar una hora del día, que tenga
+las siguientes condiciones (Tomado de <em>Aprenda a pensar como un programador
+con Python</em>):</p>
+<ol class="arabic">
+<li><p class="first">Tres atributos: <tt class="docutils literal"><span class="pre">h</span></tt>, <tt class="docutils literal"><span class="pre">m</span></tt> y <tt class="docutils literal"><span class="pre">s</span></tt>, para guardar las horas, minutos y
+segundos.</p>
+</li>
+<li><p class="first">Un método llamado <tt class="docutils literal"><span class="pre">imprimir_tiempo</span></tt> que imprima el tiempo almacenado
+en una instancia, de la siguiente forma:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [143]: </span><span class="n">t1</span> <span class="o">=</span> <span class="n">Tiempo</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="gp">In [144]: </span><span class="n">t1</span><span class="o">.</span><span class="n">imprimir_tiempo</span><span class="p">()</span>
+<span class="go">16:07:01</span>
+
+<span class="gp">In [145]: </span><span class="n">t2</span> <span class="o">=</span> <span class="n">Tiempo</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">32</span><span class="p">)</span>
+
+<span class="gp">In [146]: </span><span class="n">t2</span><span class="o">.</span><span class="n">imprimir_tiempo</span><span class="p">()</span>
+<span class="go">02:06:32</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Un método <tt class="docutils literal"><span class="pre">sumar</span></tt> que sume dos tiempos diferentes.</p>
+<p><em>Sugerencias</em>:</p>
+<ul>
+<li><p class="first">Sumar cada atributo por separado, es decir, segundo con segundos,
+minutos con minutos y horas con horas.</p>
+</li>
+<li><p class="first">Para obtener el resultado de los segundos y los minutos, la suma debe
+realizarse módulo 60. Por ejemplo, si un Tiempo tiene 50 segundos y
+otra 15, su suma <strong>no</strong> debe darnos 65 sino 5, lo que se obtiene
+como:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">(</span><span class="mi">50</span> <span class="o">+</span> <span class="mi">15</span><span class="p">)</span><span class="o">%</span><span class="mi">60</span> <span class="o">=</span> <span class="mi">5</span>
+</pre></div>
+</div>
+<p>Para las horas, tomar la suma módulo 24.</p>
+</li>
+<li><p class="first">Verificar si la suma de los segundos, <strong>sin</strong> tomar el módulo, es
+mayor o igual a <tt class="docutils literal"><span class="pre">60</span></tt>, y si lo es, incrementar en <tt class="docutils literal"><span class="pre">1</span></tt> el valor de
+los minutos. Tener en cuenta lo mismo para la suma de los minutos y el
+valor de las horas.</p>
+</li>
+</ul>
+<p>Un ejemplo de este método es:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [147]: </span><span class="n">t1</span> <span class="o">=</span> <span class="n">Tiempo</span><span class="p">(</span><span class="mi">23</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">45</span><span class="p">)</span>
+
+<span class="gp">In [148]: </span><span class="n">t2</span> <span class="o">=</span> <span class="n">Tiempo</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">40</span><span class="p">)</span>
+
+<span class="gp">In [149]: </span><span class="n">t3</span> <span class="o">=</span> <span class="n">t1</span><span class="o">.</span><span class="n">sumar</span><span class="p">(</span><span class="n">t2</span><span class="p">)</span>
+
+<span class="gp">In [150]: </span><span class="n">t3</span><span class="o">.</span><span class="n">imprimir_tiempo</span><span class="p">()</span>
+<span class="go">03:31:25</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
 </div>
 <div class="section" id="importar-librerias">
 <h2>Importar librerías<a class="headerlink" href="#importar-librerias" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Python posee un gran variedad de librerías para todo tipo de usos, desde la
+creación y apertura de archivos en cualquier sistema operativo hasta la
+extracción de datos en archivos de Word o Excel, pasando por el manejo y
+análisis de enormes cantidades de información provenientes de la bolsa de
+valores o de experimentos astronómicos, climáticos o biológicos.</p>
+<p>La ventaja de Python sobre otros lenguajes de programación es que posee un
+avanzado mecanismo para importar librerías o comandos específicos de alguna de
+ellas, lo que hace muy sencillo usarlas para beneficio del programador. A
+continuación veremos las distintas formas en que puede hacerse esto.</p>
+<ol class="arabic">
+<li><p class="first">La primera opción, y la más sencilla, es usar el comando <tt class="docutils literal"><span class="pre">import</span></tt> seguido
+del nombre la librería, así:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">math</span>
+</pre></div>
+</div>
+<p>Cuando queramos usar algún comando de la librería, debemos llamarla por su
+nombre seguido de <tt class="docutils literal"><span class="pre">.</span></tt>. Inmediatamente deberá aparecer una lista con las
+funciones que hace parte de la misma. así:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [151]: </span><span class="n">math</span><span class="o">.</span>
+<span class="go">math.__class__         math.__package__       math.asin              math.e                 math.fsum              math.modf</span>
+<span class="go">math.__delattr__       math.__reduce__        math.asinh             math.erf               math.gamma             math.pi</span>
+<span class="go">math.__dict__          math.__reduce_ex__     math.atan              math.erfc              math.hypot             math.pow</span>
+<span class="go">math.__doc__           math.__repr__          math.atan2             math.exp               math.isinf             math.radians</span>
+<span class="go">math.__format__        math.__setattr__       math.atanh             math.expm1             math.isnan             math.sin</span>
+<span class="go">math.__getattribute__  math.__sizeof__        math.ceil              math.fabs              math.ldexp             math.sinh</span>
+<span class="go">math.__hash__          math.__str__           math.copysign          math.factorial         math.lgamma            math.sqrt</span>
+<span class="go">math.__init__          math.__subclasshook__  math.cos               math.floor             math.log               math.tan</span>
+<span class="go">math.__name__          math.acos              math.cosh              math.fmod              math.log10             math.tanh</span>
+<span class="go">math.__new__           math.acosh             math.degrees           math.frexp             math.log1p             math.trunc</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Nota</p>
+<p class="last">De no aparecer esta lista, debe oprimirse <tt class="docutils literal"><span class="pre">TAB</span></tt> si se está en la
+consola o <tt class="docutils literal"><span class="pre">CTRL</span> <span class="pre">+</span> <span class="pre">Espacio</span></tt> si se está en el editor.</p>
+</div>
+<p>Como <tt class="docutils literal"><span class="pre">math</span></tt> es la librería de funciones matemáticas básicas de Python,
+podemos utilizarla para calcular el <img class="math" src="../_images/math/010741770354e743468c1b05d49b4a1aa969dd64.png" alt="\textrm{sen}(\pi/2)"/>, por
+ejemplo:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [152]: </span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="gr">Out[152]: </span><span class="mf">1.0</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Otra opción es sólo llamar un comando específico de una librería
+determinada. Para ello usamos la siguiente sintaxis:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span>
+</pre></div>
+</div>
+<p>En este caso sólo se carga el comando <tt class="docutils literal"><span class="pre">sin</span></tt>, sin cargar el resto de la
+librería. Esto puede ser muy ventajoso cuando la librería es grande y sólo
+queremos utilizar una pequeña funcionalidad de la misma. Otra ventaja es que
+no es necesario usar el nombre de la librería antes del comando.</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [153]: </span><span class="n">sin</span><span class="p">(</span><span class="mf">3.1</span><span class="p">)</span>
+<span class="gr">Out[153]: </span><span class="mf">0.04158066243329049</span>
+</pre></div>
+</div>
+<p>Sin embargo, si queremos utilizar <tt class="docutils literal"><span class="pre">pi</span></tt>, veremos un error en la consola,
+porque no ha sido cargado:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [154]: </span><span class="n">sin</span><span class="p">(</span><span class="n">pi</span><span class="p">)</span>
+<span class="go">---------------------------------------------------------------------------</span>
+<span class="go">NameError                                 Traceback (most recent call last)</span>
+<span class="go">/home/carlos/Trabajo/Ecci/Modelacion y Simulacion/Notas de Clase/Notas/&lt;ipython-input-154-338a6e05f4c1&gt; in &lt;module&gt;()</span>
+<span class="go">----&gt; 1 sin(pi)</span>
+
+<span class="go">NameError: name &#39;pi&#39; is not defined</span>
+</pre></div>
+</div>
+<p>Para no tener que escribir una línea <tt class="docutils literal"><span class="pre">from</span> <span class="pre">math</span> <span class="pre">import</span> <span class="pre">...</span></tt> por cada
+símbolo que se desee importar, se puede usar la misma sintaxis de arriba con
+cada símbolo separado por una coma:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">pi</span>
+</pre></div>
+</div>
+<p>Al cargar <tt class="docutils literal"><span class="pre">pi</span></tt> de <tt class="docutils literal"><span class="pre">math</span></tt> de esta forma, ya no veremos el error anterior:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [155]: </span><span class="n">sin</span><span class="p">(</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="gr">Out[155]: </span><span class="mf">1.0</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Para llamar todos los comandos de una librería sin que estén precedidos por
+su nombre, se utiliza la sintaxis:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>Sin embargo, esta opción no es muy recomendable ya que los comandos de
+varias librerías pueden tener el mismo nombre, lo que puede resultar en
+serias confusiones.</p>
+</li>
+<li><p class="first">La última opción es renombrar la librería al momento de importarla. Esto es
+una práctica bastante común, pues permite utilizar nombres cortos para las
+librerías, lo que hace más fácil llamarlas con el <tt class="docutils literal"><span class="pre">.</span></tt>. Para ello se usa la
+siguiente sintaxis:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">math</span> <span class="kn">as</span> <span class="nn">mt</span>
+</pre></div>
+</div>
+<p>En lugar de <tt class="docutils literal"><span class="pre">math</span></tt> sólo usamos <tt class="docutils literal"><span class="pre">mt</span></tt>, así:</p>
+<div class="highlight-ipython"><div class="highlight"><pre><span class="gp">In [156]: </span><span class="n">mt</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">mt</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="gr">Out[156]: </span><span class="mf">1.0</span>
+</pre></div>
+</div>
+</li>
+</ol>
 </div>
 </div>
 
