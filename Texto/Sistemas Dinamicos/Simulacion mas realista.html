@@ -25,6 +25,7 @@
     <script type="text/javascript" src="../../_static/translations.js"></script>
     <link rel="top" title="Notas de Modelación y Simulación" href="../../index.html" />
     <link rel="up" title="Simulación de Sistemas Dinámicos" href="Principal.html" />
+    <link rel="next" title="Una simulación más precisa" href="Simulacion mas precisa.html" />
     <link rel="prev" title="Generar gráficas y animaciones de la simulación" href="Animaciones.html" /> 
   </head>
   <body>
@@ -32,8 +33,11 @@
       <h3>Navegación</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
+          <a href="Simulacion mas precisa.html" title="Una simulación más precisa"
+             accesskey="N">siguiente</a></li>
+        <li class="right" >
           <a href="Animaciones.html" title="Generar gráficas y animaciones de la simulación"
-             accesskey="P">anterior</a></li>
+             accesskey="P">anterior</a> |</li>
         <li><a href="../../index.html">Notas de Modelación y Simulación</a> &raquo;</li>
           <li><a href="Principal.html" accesskey="U">Simulación de Sistemas Dinámicos</a> &raquo;</li> 
       </ul>
@@ -44,11 +48,11 @@
   <ul>
 <li><a class="reference internal" href="#">Una simulación más realista</a><ul>
 <li><a class="reference internal" href="#fuerza-de-friccion-con-el-aire">Fuerza de fricción con el aire</a><ul>
-<li><a class="reference internal" href="#ejercicio">Ejercicio</a></li>
+<li><a class="reference internal" href="#ejercicios">Ejercicios</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#colision-inelastica">Colisión inelástica</a><ul>
-<li><a class="reference internal" href="#id1">Ejercicio</a></li>
+<li><a class="reference internal" href="#id1">Ejercicios</a></li>
 </ul>
 </li>
 </ul>
@@ -58,6 +62,9 @@
   <h4>Tema anterior</h4>
   <p class="topless"><a href="Animaciones.html"
                         title="Capítulo anterior">Generar gráficas y animaciones de la simulación</a></p>
+  <h4>Próximo tema</h4>
+  <p class="topless"><a href="Simulacion mas precisa.html"
+                        title="Próximo capítulo">Una simulación más precisa</a></p>
         </div>
       </div>
 
@@ -75,7 +82,7 @@ la realidad.</p>
 observamos en la caída de una bola, debemos incluir dos factores adicionales a
 la simulación, que son los que vamos a describir a continuación.</p>
 <div class="section" id="fuerza-de-friccion-con-el-aire">
-<h2>Fuerza de fricción con el aire<a class="headerlink" href="#fuerza-de-friccion-con-el-aire" title="Enlazar permanentemente con este título">¶</a></h2>
+<span id="friction"></span><h2>Fuerza de fricción con el aire<a class="headerlink" href="#fuerza-de-friccion-con-el-aire" title="Enlazar permanentemente con este título">¶</a></h2>
 <p>Ya que el aire es un fluido, la bola pierde parte de su velocidad mientras lo
 atraviesa, lo que hace que paulatinamente se vaya deteniendo. En Física este
 fenómeno se describe mediante una fuerza de arrastre, que se define como:</p>
@@ -88,8 +95,8 @@ del mismo.</p>
 como constante e igual a la gravedad, y en cambio calcularla como:</p>
 <div class="math">
 <p><img src="../../_images/math/2c422d5779fd16499e9a2cce1b1e62ecbce77376.png" alt="a_{i+1} = g - b \, v_{i}" /></p>
-</div><div class="section" id="ejercicio">
-<h3>Ejercicio<a class="headerlink" href="#ejercicio" title="Enlazar permanentemente con este título">¶</a></h3>
+</div><div class="section" id="ejercicios">
+<h3>Ejercicios<a class="headerlink" href="#ejercicios" title="Enlazar permanentemente con este título">¶</a></h3>
 <ol class="arabic">
 <li><p class="first">Incluir la fuerza de arrastre en la simulación de la caída de una bola. Para
 ello debe definirse una nueva lista llamada <tt class="docutils literal"><span class="pre">aceleraciones</span></tt>, cuyo primer
@@ -97,10 +104,10 @@ elemento va a ser <em>g</em> y los demás se van a calcular con la ecuación
 anterior.</p>
 <p>Calcular las velocidades con el método de Euler, como</p>
 <div class="math">
-<p><img src="../../_images/math/23d08dc65ddc53b7ed89fb54347fe6f463567af5.png" alt="v_{i+1} = v_{i} + a_{i} \, dt" /></p>
+<p><img src="../../_images/math/1849ce7a993bcde9e94f450cf762b835e15a0d43.png" alt="v_{i+1} = v_{i} + a_{i} \, \Delta t" /></p>
 </div></li>
 <li><p class="first">Obtener una gráfica de la aceleración vs. el tiempo, así como nuevas
-gráficas para la posición y la velocidad.</p>
+gráficas para la posición y la velocidad. Que cambió ahora?</p>
 </li>
 </ol>
 </div>
@@ -118,7 +125,7 @@ choque sea ligeramente menor que la velocidad antes del mismo, así:</p>
 </div><p>donde <em>k</em> es una constante entre 0 y 1, que depende de las propiedades del
 material que compone a los objetos que chocan.</p>
 <div class="section" id="id1">
-<h3>Ejercicio<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h3>
+<h3>Ejercicios<a class="headerlink" href="#id1" title="Enlazar permanentemente con este título">¶</a></h3>
 <ol class="arabic simple">
 <li>Incluir la ecuación de colisión inelástica en la simulación de la bola.</li>
 <li>Hacer que la velocidad de la partícula sea cero, si el valor absoluto de la
@@ -139,8 +146,11 @@ conseguiremos que se detenga definitivamente.</li>
       <h3>Navegación</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
+          <a href="Simulacion mas precisa.html" title="Una simulación más precisa"
+             >siguiente</a></li>
+        <li class="right" >
           <a href="Animaciones.html" title="Generar gráficas y animaciones de la simulación"
-             >anterior</a></li>
+             >anterior</a> |</li>
         <li><a href="../../index.html">Notas de Modelación y Simulación</a> &raquo;</li>
           <li><a href="Principal.html" >Simulación de Sistemas Dinámicos</a> &raquo;</li> 
       </ul>
