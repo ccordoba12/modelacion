@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Movimiento de muchas partículas &mdash; Notas de Modelación y Simulación</title>
+    <link rel="stylesheet" href="../../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/translations.js"></script>
+    <link rel="top" title="Notas de Modelación y Simulación" href="../../index.html" />
+    <link rel="up" title="Sistemas de muchas partículas" href="Principal.html" />
+    <link rel="prev" title="Movimiento en dos dimensiones" href="Movimiento en dos dimensiones.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="Movimiento en dos dimensiones.html" title="Movimiento en dos dimensiones"
+             accesskey="P">anterior</a></li>
+        <li><a href="../../index.html">Notas de Modelación y Simulación</a> &raquo;</li>
+          <li><a href="Principal.html" accesskey="U">Sistemas de muchas partículas</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Tema anterior</h4>
+  <p class="topless"><a href="Movimiento en dos dimensiones.html"
+                        title="Capítulo anterior">Movimiento en dos dimensiones</a></p>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="movimiento-de-muchas-particulas">
+<h1>Movimiento de muchas partículas<a class="headerlink" href="#movimiento-de-muchas-particulas" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Para simular el movimiento de muchas partículas al mismo tiempo, vamos a seguir
+el mismo procedimiento de la sección anterior. Es decir, sólo vamos a cambiar
+los valores de las posiciones, velocidades y aceleraciones iniciales, mientras
+que dejamos lo demás exactamente como estaba, pues los arreglos de Numpy se van
+a encargar de hacerlo todo por nosotros.</p>
+<p>Así que para simular el movimiento de dos partículas, vamos a definir estos
+valores como:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">p0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]])</span>
+<span class="n">v0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+<span class="n">a0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="n">g</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">g</span><span class="p">]])</span>
+</pre></div>
+</div>
+<p>Lo que vemos es que ahora cada arreglo se compone de dos sub-arreglos, el
+primero de los cuales corresponde a la posición, velocidad y aceleración de la
+primera partícula, y el segundo a los mismos valores pero de la segunda
+partícula.</p>
+<p>Además de esto, lo único que diferencia el código de una partícula del de
+muchas, es la adición de una función que calcule la colisión entre una
+partícula y otra.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Advertencia</p>
+<p class="last">Para la próxima clase! Sorry.</p>
+</div>
+<p><strong>Ejercicios</strong></p>
+<ol class="arabic">
+<li><p class="first">Del programa escrito en la sección anterior, cambiar sólo la parte que
+genera la colisión con los muros.</p>
+</li>
+<li><p class="first">Generar una animación en VPython. Para ello vamos a seguir estos pasos:</p>
+<ul>
+<li><p class="first">Con un ciclo <tt class="docutils literal"><span class="pre">for</span></tt> generar tantas partículas como se hayan definido en
+<tt class="docutils literal"><span class="pre">p0</span></tt>. Utilizar para todas la definición en términos de <tt class="docutils literal"><span class="pre">vis.cylinder</span></tt>,
+pero cambiándole sus posiciones.</p>
+</li>
+<li><p class="first">Dentro del ciclo <tt class="docutils literal"><span class="pre">for</span></tt> que genera la animación, introducir un nuevo
+ciclo <tt class="docutils literal"><span class="pre">for</span></tt> para moverse en el arreglo de partículas.</p>
+</li>
+<li><p class="first">Actualizar su posición como:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">particulas</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">pos</span> <span class="o">=</span> <span class="n">posicion</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>donde <tt class="docutils literal"><span class="pre">posicion</span></tt> es un elemento de <tt class="docutils literal"><span class="pre">posiciones</span></tt></p>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navegación</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="Movimiento en dos dimensiones.html" title="Movimiento en dos dimensiones"
+             >anterior</a></li>
+        <li><a href="../../index.html">Notas de Modelación y Simulación</a> &raquo;</li>
+          <li><a href="Principal.html" >Sistemas de muchas partículas</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Carlos Cordoba.
+      Creado con <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>
