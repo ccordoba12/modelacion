@@ -194,6 +194,13 @@ vel2n = vel2 \cdot vn" /></p>
 </div><p>donde <img class="math" src="../../_images/math/8f1fb66751f2ee2626c75303485dba473c39a2f2.png" alt="\cdot"/> es el producto punto o escalar entre los dos vectores, y
 se puede obtener con la función <tt class="docutils literal"><span class="pre">numpy.dot</span></tt></p>
 </li>
+<li><p class="first">Con un <tt class="docutils literal"><span class="pre">if</span></tt> determinar que <strong>no</strong> se tenga que el signo de <tt class="docutils literal"><span class="pre">vel1n</span></tt> sea
+igual a <tt class="docutils literal"><span class="pre">1</span></tt> <strong>y</strong> el de <tt class="docutils literal"><span class="pre">vel2n</span></tt> sea igual a <tt class="docutils literal"><span class="pre">-1</span></tt>. Si se tiene este
+caso, quiere decir que las partículas se están moviendo en direcciones
+opuestas en el eje normal y que <strong>no</strong> van a colisionar.</p>
+<p>Para revisar el signo de un número, utilizar la función <tt class="docutils literal"><span class="pre">np.sign</span></tt>. Todo lo
+que sigue debe estar dentro de este <tt class="docutils literal"><span class="pre">if</span></tt>.</p>
+</li>
 <li><p class="first">Después se calculan las componentes tangenciales de <tt class="docutils literal"><span class="pre">vel1</span></tt> y <tt class="docutils literal"><span class="pre">vel2</span></tt> como:</p>
 <div class="math">
 <p><img src="../../_images/math/0cb103aadc4242cb3987519ba43a11a22f56322d.png" alt="vel1t = vel1 \cdot vt
@@ -248,6 +255,17 @@ valor define qué tan rápido se mueve una partícula?</li>
 </div>
 <div class="section" id="fuerzas-con-otras-particulas">
 <h3>2. Fuerzas con otras partículas<a class="headerlink" href="#fuerzas-con-otras-particulas" title="Enlazar permanentemente con este título">¶</a></h3>
+<p>Hay varios tipos de fuerzas que una partícula le puede ejercer a otra, pero en
+esta sección sólo vamos a simular una: la fuerza de gravedad entre la Tierra y
+un cometa que pasa cerca de ella.</p>
+<p>La fuerza de gravedad que un cuerpo <em>1</em> le ejerce a un cuerpo <em>2</em> se calcula
+con la fórmula:</p>
+<div class="math">
+<p><img src="../../_images/math/2c782a9ef0a1e9b1d9d218b1a69b0996b2133609.png" alt="\vec{F}_{12} = G \frac{m_{1}m_{2}}{r_{12}^{2}} \vec{r}_{12}" /></p>
+</div><p>donde <img class="math" src="../../_images/math/6e28ce12d49d39f160d5a0ef54077fc98e4b9d2b.png" alt="G"/> es la constante universal de la gravitación, <img class="math" src="../../_images/math/25d659c8074c617549d61db9db0773e0fccad7b3.png" alt="m_1"/> y
+<img class="math" src="../../_images/math/ee54e8432d4a60984309e86f32931b04c8e2f1da.png" alt="m_2"/> son las masas de los cuerpos y <img class="math" src="../../_images/math/598c5740d7199ae8297c08e5cb79ca0917eb4b53.png" alt="\vec{r}_{12}"/> es un vector
+unitario en la dirección de línea que va desde el centro de la partícula <em>1</em> al
+centro de <em>2</em>.</p>
 </div>
 </div>
 </div>
